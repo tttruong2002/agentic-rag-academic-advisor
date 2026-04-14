@@ -1,0 +1,22 @@
+streamlit
+python-dotenv
+langchain
+langchain-groq
+# langchain-community
+chromadb
+sentence-transformers
+langchain-core
+langchain-docling
+psycopg2-binary
+langchain_huggingface
+langchain_chroma
+
+# Added for 02_Refinement_Merger.ipynb
+# langchain_ollama # Local LLM Ollama
+# google-genai # Google Gemini LLM
+
+# backend
+fastapi
+uvicorn
+pydantic
+sqlmodel

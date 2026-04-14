@@ -1,0 +1,34 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Virtual Environment ===
+venv/
+.venv/
+env/
+
+# === Environment Variables ===
+.env
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Vector Database (auto-generated, rebuild from notebooks) ===
+chroma_db/
+
+# === Compiled / Merged data (auto-generated) ===
+data/processed/merged_documents.txt
+
+# === Raw PDF source files (copyright protected) ===
+data/raw/
+
+# === IDE & OS ===
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# === Agents & temp ===
+.agents/

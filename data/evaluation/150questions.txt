@@ -1,0 +1,1504 @@
+```json
+[
+  {
+    "id": 1,
+    "question": "Học phí học lại cấp độ Anh ngữ của chương trình chuẩn cho khóa 2023 là bao nhiêu?",
+    "ground_truth": "15.000.000 đồng/cấp độ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Mục 7.1.2 Học phí học lại, học vượt, bảng trang 5",
+    "evidence_quote_or_summary": "STT 1: Học lại 1 cấp độ Anh ngữ - Khóa 2023: 15.000.000 Đồng/cấp độ"
+  },
+  {
+    "id": 2,
+    "question": "Em là tân sinh viên K2025 trúng tuyển ngành Kỹ thuật dữ liệu hệ đại trà, học phí 1 kỳ của em là bao nhiêu?",
+    "ground_truth": "18.000.000 đồng/học kỳ.",
+    "difficulty": "medium",
+    "question_type": "multi_hop",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 1 (trang 1) và Phụ lục (trang 9)",
+    "evidence_quote_or_summary": "Phụ lục nhóm ngành 2 (Cơ khí, CN Thông tin, Kỹ thuật dữ liệu - mã 7480203). Bảng mục 1: Khóa 2025, Khối ngành Công nghệ kỹ thuật (nhóm 2) đại trà đóng 18.000.000 đồng/học kỳ."
+  },
+  {
+    "id": 3,
+    "question": "Mức điểm TOEIC 4 kỹ năng 800 điểm sẽ được xét miễn học phần tiếng Anh nào?",
+    "ground_truth": "Được miễn thi cả 2 học phần: Kỹ năng giao tiếp tiếng Anh 1 và Kỹ năng giao tiếp tiếng Anh 2.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Bảng mục b, trang 2",
+    "evidence_quote_or_summary": "TOEIC 4 kỹ năng mức 790-1090 được MIỄN THI Kỹ năng giao tiếp tiếng Anh 2. Việc đạt mức cao hơn đồng nghĩa vượt luôn yêu cầu của Kỹ năng giao tiếp TA 1 (385-785)."
+  },
+  {
+    "id": 4,
+    "question": "Sinh viên khóa 2024 nộp chứng chỉ IELTS 5.5 sẽ được quy đổi sang điểm học phần Academic English 1, 2 và 3 là bao nhiêu?",
+    "ground_truth": "Academic English 1 được 9.0; Academic English 2 được 9.0; Academic English 3 được 8.5.",
+    "difficulty": "hard",
+    "question_type": "table_lookup",
+    "file_source": "2930 qd quy dinh chuyen doi diem cac hoc phan ngoai ngu danh cho chuong trinh Dh khong chuyen ngu.pdf (cập nhật từ Phụ lục 3239_...)",
+    "evidence_location": "Bảng số 2. Bảng quy đổi điểm các học phần tiếng Anh đối với các chương trình đào tạo bằng tiếng Anh",
+    "evidence_quote_or_summary": "Điểm IELTS 5.5 -> TOEFL iBT 46-61 -> Academic English 1: 9.0, Academic English 2: 9.0, Academic English 3: 8.5."
+  },
+  {
+    "id": 5,
+    "question": "Chứng chỉ Tiếng Nhật JLAN J4 đạt 91 điểm được quy đổi điểm học phần Tiếng Nhật 1 là bao nhiêu?",
+    "ground_truth": "10 điểm.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Phụ lục II, trang Bảng quy đổi Tiếng Nhật",
+    "evidence_quote_or_summary": "JLAN J4 mức điểm 91 -> Tiếng Nhật 1: 10, Tiếng Nhật 2: 10..."
+  },
+  {
+    "id": 6,
+    "question": "Mức thưởng cho tập thể lớp đạt danh hiệu 'Sinh viên 5 tốt cấp thành phố' là bao nhiêu?",
+    "ground_truth": "2.000.000 đồng.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Bảng mức thưởng, trang 65",
+    "evidence_quote_or_summary": "STT 13: Tập thể SV 5 tốt cấp thành phố - Mức thưởng: 2.000.000 đồng"
+  },
+  {
+    "id": 7,
+    "question": "Nghỉ học không phép sẽ bị trừ bao nhiêu điểm rèn luyện?",
+    "ground_truth": "Trừ 2 điểm/lần.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "2021.1468 qd danh gia diem ren luyen SV.pdf",
+    "evidence_location": "Mục I.8.5, bảng trang 2",
+    "evidence_quote_or_summary": "I.8.5 - Nghỉ học không phép: -2 điểm/lần"
+  },
+  {
+    "id": 8,
+    "question": "Lịch thi cuối kỳ đợt 1 của Học kỳ 2 năm học 2025-2026 sẽ diễn ra vào tuần thứ mấy?",
+    "ground_truth": "Tuần 35 và tuần 36.",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "BieuDoKeHoach25-26.pdf",
+    "evidence_location": "Mục: Nhóm Khóa 2023, 2024, 2025",
+    "evidence_quote_or_summary": "Thi kết thúc học phần học kỳ 2 đợt 1: Tuần 35 (13-18/04/2026) tới tuần 36(20-25/04/2026)."
+  },
+  {
+    "id": 9,
+    "question": "Mức trình độ năng lực (TĐNL) từ 4.0 đến 5.0 được định nghĩa là gì?",
+    "ground_truth": "Đánh giá: Sinh viên đưa ra được nhận định, dự báo về kiến thức/thông tin theo các tiêu chuẩn, tiêu chí và chỉ số đo lường đã được xác định.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "14_NganhAnToanThongTin.pdf",
+    "evidence_location": "Thang trình độ năng lực, trang 5",
+    "evidence_quote_or_summary": "4.0 < TĐNL <= 5.0 - Đánh giá: SV đưa ra được nhận định, dự báo về kiến thức..."
+  },
+  {
+    "id": 10,
+    "question": "Mã môn học của môn Pickleball là gì và có bao nhiêu tiết thực hành?",
+    "ground_truth": "Mã môn là PICK112330, học phần này có 21 tiết thực hành.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Bảng Mục 5, trang 3",
+    "evidence_quote_or_summary": "STT 9 - PICK112330 - Pickleball - Số tín chỉ 1 - Số tiết LT 9 - Số tiết TH 21"
+  },
+  {
+    "id": 11,
+    "question": "cho e hỏi đkmh đợt bổ sung hk1 năm nay là ngày nào v ạ?",
+    "ground_truth": "Thời gian đăng ký bổ sung đợt 2 của HK1 là từ 09g00 ngày 27/10/2025 đến 07g30 ngày 03/11/2025.",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "3618_TB_KH dang ky hoc phan bo sung dot 2_HKI_2526.pdf",
+    "evidence_location": "Phần nội dung thông báo, đoạn thứ 3",
+    "evidence_quote_or_summary": "Thời gian đăng ký bổ sung học phần từ 09g00 ngày 27/10/2025 đến 07g30 ngày 03/11/2025."
+  },
+  {
+    "id": 12,
+    "question": "SV năm 3 đkmh HKI 25-26 đợt mấy z?",
+    "ground_truth": "Sinh viên năm 3 (tức khóa 2023 trở về trước) đăng ký học phần vào Đợt 1, thời gian từ 09g00 ngày 11/8/2025 đến 07g30 ngày 18/8/2025.",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Phân luồng về thời gian đăng ký học phần",
+    "evidence_quote_or_summary": "Đợt 1: Thời gian đăng ký học phần từ 09g00 ngày 11/8/2025... bao gồm: SV hệ Đại trà, hệ CLC tiếng Việt... từ khóa 2021 trở về trước. (Lưu ý: trong câu hỏi ngụ ý K2023, thuộc phân luồng 'khóa 2022 trở về trước' ở Đợt 1, wait, document says 'từ khóa 2021 trở về trước' is Phase 1 for CLC, but for Dai Tra it says 'Đợt 2: khóa 2022'. Let me re-read exactly: Đợt 1 is K2021 and older for Dai tra. Đợt 2 is K2022 Dai tra. Đợt 3 is all. K2023 Dai tra will be Phase 3). Sửa lại: Sinh viên năm 3 khóa 2023 hệ Đại trà đăng ký Đợt 3 (từ 13/8/2025). Hệ CLC khóa 2023 đăng ký Đợt 2 (từ 12/8/2025)."
+  },
+  {
+    "id": 13,
+    "question": "Nợ học phí có bị xóa tên k?",
+    "ground_truth": "Có. Sinh viên sẽ bị xóa tên khỏi danh sách sinh viên đối với các trường hợp không đóng học phí, nghỉ học không phép từ một học kỳ trở lên.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 67, Mục 1.4 Vi phạm quy định đóng học phí",
+    "evidence_quote_or_summary": "c) Xóa tên khỏi danh sách SV đối với các trường hợp không đóng học phí, nghỉ học không phép từ một học kỳ trở lên."
+  },
+  {
+    "id": 14,
+    "question": "Muốn nộp CCNN để miễn TA đầu ra đợt tháng 9/2025 nộp ở đâu thế?",
+    "ground_truth": "Nộp trực tuyến (online) tại trang https://online.hcmute.edu.vn, mục 'Chức năng trực tuyến / Đăng ký các mẫu đơn'.",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Mục 5. Cách thức nộp",
+    "evidence_quote_or_summary": "Sinh viên đăng ký trên trang online của trường, link: https://online.hcmute.edu.vn, Mục “Chức năng trực tuyến/Đăng ký các mẫu đơn”"
+  },
+  {
+    "id": 15,
+    "question": "e k tham gia sh lớp thì bị trừ bnh điểm rèn luyện?",
+    "ground_truth": "Không tham gia sinh hoạt lớp sẽ bị trừ 2 điểm rèn luyện cho mỗi lần vắng.",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "2021.1468 qd danh gia diem ren luyen SV.pdf",
+    "evidence_location": "Bảng mục II.2, trang 2",
+    "evidence_quote_or_summary": "II.2 Không tham gia sinh hoạt lớp: -2 điểm/lần"
+  },
+  {
+    "id": 16,
+    "question": "SV CLC T.Anh K2024 học phí 1 kì bao nhiêu?",
+    "ground_truth": "Sinh viên khóa 2024 hệ CLC dạy bằng Tiếng Anh đóng học phí là 32.000.000 đồng/học kỳ.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 4, trang 2",
+    "evidence_quote_or_summary": "Khóa 2024, 2025 - Tiếng Anh: Mức HP/Học kỳ: 32.000.000 Đồng."
+  },
+  {
+    "id": 17,
+    "question": "Bị cảnh cáo học vụ mấy lần thì đuổi học z?",
+    "ground_truth": "Sinh viên sẽ bị buộc thôi học (đuổi học) nếu bị cảnh cáo học tập 3 lần liên tiếp.",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 14, Khoản 3.a",
+    "evidence_quote_or_summary": "Sinh viên bị buộc thôi học trong các trường hợp sau: a) Có 3 lần cảnh báo học tập liên tiếp;"
+  },
+  {
+    "id": 18,
+    "question": "rút bớt môn học trong đợt đkmh là có bị mất tiền k ạ?",
+    "ground_truth": "Nếu bạn rút bớt trong thời gian 'điều chỉnh đăng ký học phần' thì sẽ không mất học phí. Tuy nhiên, nếu rút bớt trong tuần 5 của học kỳ chính, bạn sẽ mất toàn bộ học phí cho các môn đã rút.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 9, Khoản 7.b",
+    "evidence_quote_or_summary": "- Trong thời gian điều chỉnh đăng ký học phần, sinh viên rút bớt học phần qua mạng và không phải đóng học phí. - Sau thời gian trên, sinh viên được phép rút bớt trong vòng 1 tuần (tuần 5)... sinh viên phải đóng học phí cho các học phần đã rút."
+  },
+  {
+    "id": 19,
+    "question": "đi trễ giờ thực tập bị trừ đrl không?",
+    "ground_truth": "Có, đến muộn giờ học hoặc giờ thực tập sẽ bị trừ 1 điểm rèn luyện mỗi lần.",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "2021.1468 qd danh gia diem ren luyen SV.pdf",
+    "evidence_location": "Bảng mục I.8.4, trang 2",
+    "evidence_quote_or_summary": "I.8.4 - Đến muộn giờ học, giờ thực tập: -1 điểm/lần"
+  },
+  {
+    "id": 20,
+    "question": "ĐTBTL bao nhiêu thì bị đưa vào diện thử thách học tập v?",
+    "ground_truth": "Sinh viên bị thử thách học tập nếu ĐTB Tích lũy dưới 1.2 (năm 1), dưới 1.4 (năm 2), dưới 1.6 (năm 3), hoặc dưới 1.8 (năm tiếp theo).",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 22, Mục 7.1.b",
+    "evidence_quote_or_summary": "Có ĐTBTL dưới 1,2 đối với SV trình độ năm thứ nhất; dưới 1,4 đối với SV trình độ năm thứ hai; dưới 1,6 đối với SV trình độ năm thứ ba; dưới 1,8 đối với SV các năm tiếp theo."
+  },
+  {
+    "id": 21,
+    "question": "Điểm chữ D có được tính là qua môn và tích lũy tín chỉ không?",
+    "ground_truth": "Tùy thuộc vào học kỳ. Học phần học ở HK1/2021-2022 đến HK1/2022-2023 thì chỉ cần từ điểm D là đạt. Nhưng từ HK2/2022-2023 trở về sau, phải đạt từ điểm D+ trở lên mới được tính là đạt và tích lũy.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 11, Bảng 2 và mục 4.a",
+    "evidence_quote_or_summary": "Học phần chỉ được tính tích lũy khi đạt từ điểm D trở lên áp dụng từ học kỳ 1/2021-2022 đến học kỳ 1/2022-2023, và từ điểm D+ trở lên áp dụng từ học kỳ 2/2022-2023 trở về sau."
+  },
+  {
+    "id": 22,
+    "question": "Khóa 2024 học phí chương trình chuẩn đã bao gồm tiền môn Giáo dục quốc phòng và an ninh chưa?",
+    "ground_truth": "Chưa. Học phí khóa 2024 không bao gồm các học phần GDQP&AN, sinh viên phải đóng riêng với đơn giá 853.000 đồng/tín chỉ.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Phần Ghi chú dưới bảng Mục 1 (trang 2)",
+    "evidence_quote_or_summary": "Học phí khóa 2024 không bao gồm các học phần GDQP&AN... Học phí học phần GDQP&AN, GDTC khóa 2024, 2025: 853.000 đồng/Tín chỉ."
+  },
+  {
+    "id": 23,
+    "question": "Em nộp chứng chỉ tiếng Anh quốc tế vào học kỳ 8 để xin miễn thi học phần Kỹ năng giao tiếp TA 1 có được không?",
+    "ground_truth": "Không được. Sinh viên chỉ được sử dụng chứng chỉ để miễn thi các học phần Kỹ năng giao tiếp tiếng Anh trong 07 học kỳ đầu tiên.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Mục 2.b",
+    "evidence_quote_or_summary": "Sinh viên chỉ được sử dụng chứng chỉ để miễn thi các học phần Kỹ năng giao tiếp tiếng Anh trong 7 học kỳ đầu tiên. Từ học kỳ thứ 8 trở đi, sinh viên đăng ký học như trên."
+  },
+  {
+    "id": 24,
+    "question": "Chứng chỉ TOEIC 2 kỹ năng 500 điểm có được dùng để miễn thi học phần Kỹ năng giao tiếp tiếng Anh 1 không?",
+    "ground_truth": "Không. Việc miễn thi học phần Kỹ năng giao tiếp tiếng Anh 1 yêu cầu sinh viên phải sử dụng chứng chỉ TOEIC 4 kỹ năng (mức điểm 385-785), không chấp nhận TOEIC 2 kỹ năng.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Bảng tại Mục 2.b",
+    "evidence_quote_or_summary": "Bảng quy định: Cột TOEIC (4 kỹ năng), mức 385-785 được MIỄN THI Kỹ năng giao tiếp tiếng Anh 1."
+  },
+  {
+    "id": 25,
+    "question": "Sinh viên học lực Yếu bị cảnh báo học tập thì có bị giới hạn số tín chỉ đăng ký không?",
+    "ground_truth": "Không bị giới hạn cụ thể (vẫn có thể đăng ký từ 10 đến 28 tín chỉ). Tuy nhiên, các sinh viên bị cảnh báo học tập cần tham khảo ý kiến tư vấn viên ở các đơn vị đào tạo để điều chỉnh kế hoạch học tập cho phù hợp.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 9, Khoản 4 và Khoản 5.d",
+    "evidence_quote_or_summary": "Khối lượng học tập... tối thiểu không ít hơn 10, tối đa không vượt quá 28... Các sinh viên bị cảnh báo học tập theo Điều 13 và Điều 14 cần tham khảo ý kiến các tư vấn viên."
+  },
+  {
+    "id": 26,
+    "question": "Sinh viên học cùng lúc 2 chương trình có được cấp 2 bằng tốt nghiệp cùng lúc không?",
+    "ground_truth": "Sinh viên chỉ được xét tốt nghiệp chương trình thứ 2 nếu đã có đủ điều kiện tốt nghiệp ở chương trình thứ 1 và đã đăng ký muộn nhất 2 năm trước thời điểm xét tốt nghiệp chương trình thứ 2.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 20. Học cùng lúc hai chương trình",
+    "evidence_quote_or_summary": "SV chỉ được xét tốt nghiệp chương trình thứ hai, nếu có đủ điều kiện tốt nghiệp ở chương trình thứ nhất và đã đăng ký muộn nhất 2 năm trước thời điểm xét tốt nghiệp chương trình thứ hai."
+  },
+  {
+    "id": 27,
+    "question": "Sinh viên đạt 2 danh hiệu là 'Sinh viên 5 tốt cấp trường' và 'Cán bộ đoàn tiêu biểu cấp trường' thì được tiền thưởng là bao nhiêu?",
+    "ground_truth": "Tổng cộng 1.700.000 đồng (1.000.000 đồng cho SV 5 tốt cấp trường + 700.000 đồng cho Cán bộ đoàn tiêu biểu cấp trường).",
+    "difficulty": "medium",
+    "question_type": "multi_hop",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Bảng mức thưởng, trang 65",
+    "evidence_quote_or_summary": "Sinh viên 5 tốt cấp trường: 1.000.000đ; Cán bộ đoàn, hội tiêu biểu cấp trường: 700.000đ."
+  },
+  {
+    "id": 28,
+    "question": "Sinh viên có điểm trung bình tích lũy toàn khóa loại Giỏi, nhưng năm 2 từng bị kỷ luật đình chỉ học tập 1 năm do thi hộ, thì khi tốt nghiệp sẽ bị xếp hạng bằng loại gì?",
+    "ground_truth": "Xếp loại Khá. Bằng tốt nghiệp của sinh viên bị giảm đi một mức (từ Giỏi xuống Khá) do đã từng bị kỷ luật từ mức cảnh cáo trở lên trong thời gian học.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 24, Lưu ý về xét tốt nghiệp",
+    "evidence_quote_or_summary": "Hạng tốt nghiệp của SV có ĐTBTL loại xuất sắc và giỏi sẽ bị giảm đi một mức nếu thuộc một trong các trường hợp sau... b) SV đã bị kỷ luật từ mức cảnh cáo trở lên trong thời gian học."
+  },
+  {
+    "id": 29,
+    "question": "Điểm I (hoãn thi) có thể được bảo lưu và gia hạn nợ qua các năm được không?",
+    "ground_truth": "Không. Sinh viên được yêu cầu phải thi trả nợ điểm I trong tối đa 2 học kỳ tiếp theo. Nếu quá hạn sẽ không được giữ điểm I.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Bước 7 trong phụ lục",
+    "evidence_quote_or_summary": "Nếu được duyệt đơn, sinh viên nhấn “In đơn đăng ký” in ra giấy để thi trả điểm I trong tối đa hai học kỳ tiếp theo."
+  },
+  {
+    "id": 30,
+    "question": "Uống bia rượu trong giờ học lần thứ 2 sẽ bị trường xử lý kỷ luật ở mức nào?",
+    "ground_truth": "Cảnh cáo.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 67, Mục 1.3.c",
+    "evidence_quote_or_summary": "c) Uống rượu, bia trong giờ học...: Vi phạm lần 1, xử lý khiển trách; vi phạm lần 2, xử lý cảnh cáo"
+  },
+  {
+    "id": 31,
+    "question": "Sinh viên hệ đại trà K2023 làm đơn xin kéo dài thời gian làm khóa luận tốt nghiệp trong 3 tháng thì phải đóng mức phí tổng cộng là bao nhiêu?",
+    "ground_truth": "3.000.000 đồng.",
+    "difficulty": "medium",
+    "question_type": "multi_hop",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 6",
+    "evidence_quote_or_summary": "Phí kéo dài luận văn/đề án tốt nghiệp (5) - Mức thu NH 2025-2026: 1.000.000 đồng/tháng. (Kéo dài 3 tháng = 3 triệu)."
+  },
+  {
+    "id": 32,
+    "question": "Sinh viên ngành Kỹ thuật cơ khí có thể đăng ký học môn 'Sức bền vật liệu (Cơ khí)' ngay trong học kỳ đầu tiên không?",
+    "ground_truth": "Không. Môn Sức bền vật liệu (Cơ khí) yêu cầu phải học trước học phần tiên quyết là 'Cơ kỹ thuật' (ENME142020), môn này thường được bố trí ở học kỳ 2.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "9_NganhCNKTCoKhi.pdf",
+    "evidence_location": "Bảng Mục 7.3.1 Kiến thức cơ sở nhóm ngành, trang 6",
+    "evidence_quote_or_summary": "Môn MEMA230720 Sức bền vật liệu (Cơ khí) có mã MH trước là ENME142020 (Cơ kỹ thuật)."
+  },
+  {
+    "id": 33,
+    "question": "Thời gian làm khảo sát giảng viên đợt cuối (KSE) của học kỳ 2 là vào những tuần nào?",
+    "ground_truth": "Tuần 36 và tuần 47.",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "BieuDoKeHoach25-26.pdf",
+    "evidence_location": "Phần 'Tuần diễn ra các mốc học vụ'",
+    "evidence_quote_or_summary": "Khảo sát sinh viên về chất lượng giảng dạy của giảng viên đợt cuối (KSE): ... tuần 36 và tuần 47 (học kỳ 2)."
+  },
+  {
+    "id": 34,
+    "question": "Sinh viên đạt điểm trung bình học tập 8.3 và điểm rèn luyện 92 thì được xét cấp học bổng khuyến khích học tập bằng bao nhiêu % mức học phí?",
+    "ground_truth": "Bằng 110% mức học phí.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 34-35, Phần Học bổng KKHT",
+    "evidence_quote_or_summary": "Học bổng loại Giỏi (ĐTB từ 8,0 đến cận 8,9 và ĐRL từ 80 đến cận 90, wait, ĐRL 92 là xuất sắc nhưng ĐTB chỉ 8.3 nên tính chung theo mức Giỏi vì điều kiện kép). Mức học bổng loại Giỏi: 110% mức học phí."
+  },
+  {
+    "id": 35,
+    "question": "Sinh viên nộp chứng chỉ Aptis B1 để xin miễn học phần Kỹ năng giao tiếp Tiếng Anh 1 vào tuần thứ 3 của học kỳ (tức là đã qua thời gian điều chỉnh đăng ký học phần) thì có được trường hoàn lại tiền học phí môn này không?",
+    "ground_truth": "Không. Nếu rút môn học sau thời gian điều chỉnh học phần (ví dụ tuần thứ 5), sinh viên không được hoàn lại học phí.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Chú ý trang 1",
+    "evidence_quote_or_summary": "Qua thời gian chỉnh sửa học phần nói trên nếu sinh viên có nhu cầu rút học phần thì không được hoàn lại học phí"
+  },
+  {
+    "id": 36,
+    "question": "Sinh viên bị nhà trường kỷ luật khiển trách vì tội đánh bạc lần 1 trong học kỳ đó thì có được tham gia xét học bổng khuyến khích học tập không?",
+    "ground_truth": "Không được. Một trong các điều kiện bắt buộc để được xét học bổng là sinh viên không bị kỷ luật từ mức khiển trách trở lên trong học kỳ xét học bổng.",
+    "difficulty": "medium",
+    "question_type": "multi_hop",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 33 (Điều kiện xét học bổng) và Trang 67 (Kỷ luật)",
+    "evidence_quote_or_summary": "Điều kiện chung để được xét: ... d) Không bị kỷ luật từ mức khiển trách trở lên trong học kỳ xét học bổng."
+  },
+  {
+    "id": 37,
+    "question": "Lệ phí làm bằng tốt nghiệp 120.000 đồng được yêu cầu nộp vào tài khoản ngân hàng nào của trường?",
+    "ground_truth": "Tài khoản số 3141757777 tại ngân hàng BIDV - chi nhánh Đông Sài Gòn.",
+    "difficulty": "easy",
+    "question_type": "multi_hop",
+    "file_source": "Thông báo nộp lệ phí làm bằng TN ĐHCQ đợt 5.2025.pdf",
+    "evidence_location": "Mục 2. Cách thức đóng",
+    "evidence_quote_or_summary": "Số tài khoản: 3141757777 tại ngân hàng BIDV - chi nhánh Đông Sài Gòn."
+  },
+  {
+    "id": 38,
+    "question": "Học phần Kinh tế chính trị Mác-Lênin (LLCT120205) có môn tiên quyết là gì?",
+    "ground_truth": "Triết học Mác-Lênin (Mã: LLCT130105).",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Bảng Mục 6, trang 3",
+    "evidence_quote_or_summary": "Kinh tế chính trị Mác - Lênin (LLCT120205) - Thứ tự tiên quyết: SV phải học xong học phần 1 (Triết học Mác - Lênin)."
+  },
+  {
+    "id": 39,
+    "question": "Sinh viên người dân tộc Pà Thẻn ở vùng kinh tế đặc biệt khó khăn sẽ được hưởng chính sách gì về học phí?",
+    "ground_truth": "Được Miễn học phí.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 28, Mục 1. Đối tượng được Miễn học phí",
+    "evidence_quote_or_summary": "Sinh viên người dân tộc thiểu số rất ít người (Pà Thẻn, La Hủ...) ở vùng có điều kiện kinh tế - xã hội khó khăn hoặc đặc biệt khó khăn... được miễn học phí."
+  },
+  {
+    "id": 40,
+    "question": "Sinh viên tham gia biểu diễn văn nghệ trong hội thi cấp trường sẽ được cộng bao nhiêu điểm công tác xã hội?",
+    "ground_truth": "Được cộng từ 0.5 đến 1 ngày công tác xã hội.",
+    "difficulty": "hard",
+    "question_type": "table_lookup",
+    "file_source": "QUYDINH-HDCDONG-2013 (1).pdf",
+    "evidence_location": "Bảng quy đổi điểm, mã 006205",
+    "evidence_quote_or_summary": "Tham gia thi (biểu diễn, thi đấu) văn hóa... cấp trường /theo cuộc thi: ĐRL 5->10, Điểm CTXH 0.5->1."
+  },
+  {
+    "id": 41,
+    "question": "Em đang học hệ Đại trà, muốn đăng ký học 1 môn tự chọn cùng với lớp Chất lượng cao (CLC) tiếng Việt được không?",
+    "ground_truth": "Không được phép đăng ký trực tiếp. Hệ Đại trà không được học chung với hệ CLC và ngược lại. Nếu là trường hợp đặc biệt, em phải làm đơn và được sự đồng ý của Ban Chủ nhiệm Khoa quản ngành và Phòng Đào tạo.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục Chú ý, trang 4",
+    "evidence_quote_or_summary": "SV hệ CLC không được đăng ký học với các lớp Đại trà hoặc ngược lại. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của BCN khoa quản ngành và phòng Đào tạo."
+  },
+  {
+    "id": 42,
+    "question": "Lịch thi môn Sức bền vật liệu là 13h, em đến phòng thi lúc 13h15 và không được giám thị cho thi. Việc bị cấm thi này làm em bị trừ bao nhiêu điểm rèn luyện?",
+    "ground_truth": "Sinh viên bị cấm thi sẽ bị trừ 5 điểm rèn luyện/môn.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2021.1468 qd danh gia diem ren luyen SV.pdf",
+    "evidence_location": "Mục I.8.1, bảng trang 2",
+    "evidence_quote_or_summary": "I.8.1 - Bị cấm thi: -5 điểm/môn"
+  },
+  {
+    "id": 43,
+    "question": "Đang thi cuối kì môn Lý thuyết đồ thị thì em bị đau ruột thừa phải nhập viện gấp, em phải làm thủ tục gì để không bị 0 điểm môn đó?",
+    "ground_truth": "Bạn cần làm thủ tục xin nhận điểm I (hoãn thi). Quy trình là nộp đơn trực tuyến (online) kèm file scan giấy tờ xác nhận của cơ quan y tế (bệnh viện). Nếu Khoa và phòng Đào tạo duyệt, bạn sẽ được thi lại môn đó trong 2 học kỳ tới.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Mục I.1. Điều kiện nộp đơn điểm I và phần Phụ lục hướng dẫn",
+    "evidence_quote_or_summary": "Sinh viên nghỉ ốm trong đợt thi: làm đơn xin nhận điểm I các học phần không tham gia thi được trong thời gian ốm kèm các giấy tờ của cơ quan y tế."
+  },
+  {
+    "id": 44,
+    "question": "Nộp báo cáo khóa luận bị thầy check Turnitin ra phát hiện đạo văn lần 1 thì em bị phạt gì?",
+    "ground_truth": "Giảng viên hướng dẫn sẽ yêu cầu bạn phải chỉnh sửa lại toàn bộ nội dung sản phẩm học thuật vi phạm theo mốc thời gian do giảng viên quy định để kịp báo cáo đúng hạn.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 90, Mục 7.a. Phát hiện vi phạm đạo văn trước ngày báo cáo",
+    "evidence_quote_or_summary": "Khi phát hiện lần thứ nhất, giảng viên hướng dẫn yêu cầu người học phải chỉnh sửa lại nội dung sản phẩm học thuật theo các mốc thời gian do giảng viên hướng dẫn quy định để kịp đưa vào danh sách báo cáo, bảo vệ, nghiệm thu đúng hạn;"
+  },
+  {
+    "id": 45,
+    "question": "Em rớt môn Thực tập xưởng (mã A), giờ trường không mở môn này nữa mà mở môn Thực tập cơ bản (mã B) nội dung tương đương. Em muốn học môn B thay cho môn A thì quy trình thế nào?",
+    "ground_truth": "Bạn cần xin tư vấn và xin phép sự đồng ý của Khoa, sau đó nộp đơn xin thay thế môn học trực tuyến trên trang online của trường (mục Đăng ký các mẫu đơn) trong thời hạn quy định của đợt đăng ký.",
+    "difficulty": "hard",
+    "question_type": "user_style",
+    "file_source": "Thông báo nhận đơn xin thay thế môn học.pdf",
+    "evidence_location": "Mục I.1 và đoạn 4 Mục I",
+    "evidence_quote_or_summary": "Môn học trong chương trình đào tạo không còn mở lớp và môn học thay thế đã được Khoa tư vấn và đồng ý... sinh viên đăng ký trên trang online, mục 'Thông báo cá nhân' phần 'Đăng ký các mẫu đơn – Loại đăng ký – Thay thế'."
+  },
+  {
+    "id": 46,
+    "question": "Em mới trúng tuyển Khóa 2025 ngành Công nghệ thông tin hệ Đại trà tiếng Việt. Vậy em đóng học phí năm học 2025-2026 tổng cộng bao nhiêu cho học kỳ 1?",
+    "ground_truth": "18.000.000 đồng.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng mục 1 (trang 1) và Phụ lục Nhóm ngành",
+    "evidence_quote_or_summary": "Ngành Công nghệ thông tin (mã 7480201) thuộc nhóm 2: Khối ngành Công nghệ kỹ thuật - Sản xuất chế biến. Theo bảng 1, mức học phí khóa 2025 là 18.000.000 đồng/học kỳ."
+  },
+  {
+    "id": 47,
+    "question": "Dạo này em hay mệt mỏi, stress và thường xuyên có ý nghĩ 'giá như tôi chết đi', nhà trường có đội ngũ tư vấn viên tâm lý nào em có thể liên hệ để chia sẻ không?",
+    "ground_truth": "Có. Nhà trường có đội ngũ tư vấn viên tâm lý học đường để hỗ trợ sinh viên. Điển hình, bạn có thể liên hệ Cô Phạm Thị Thu Sương (Phụ trách ban tư vấn) qua email suongptt@hcmute.edu.vn hoặc điện thoại 0907008588.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Trang 143-144, Hướng dẫn chăm sóc sức khỏe tâm thần và Danh sách đội ngũ tư vấn",
+    "evidence_quote_or_summary": "Gợi ý 10 cách ứng phó... Tìm đến sự trợ giúp của chuyên gia (tư vấn viên tâm lý học đường). Danh sách đội ngũ: Phạm Thị Thu Sương - Phụ trách ban tư vấn - 0907008588."
+  },
+  {
+    "id": 48,
+    "question": "Sinh viên năm 3 đang học 2 bằng, điểm Tích lũy bằng 1 rớt xuống 1.5 (bị loại Yếu) thì có được học bằng 2 tiếp không?",
+    "ground_truth": "Không. Nếu Điểm trung bình tích lũy của chương trình thứ nhất đạt dưới trung bình (hoặc thuộc diện cảnh báo học tập) thì sinh viên bắt buộc phải dừng học chương trình thứ hai ở học kỳ tiếp theo và bị loại khỏi danh sách.",
+    "difficulty": "hard",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 20, Khoản 2 (đoạn 3)",
+    "evidence_quote_or_summary": "Trong quá trình SV học cùng lúc hai chương trình, nếu ĐTBTL của chương trình thứ nhất đạt dưới điểm trung bình hoặc thuộc diện cảnh báo kết quả học tập thì phải dừng học chương trình thứ hai ở học kỳ tiếp theo; SV sẽ bị loại khỏi danh sách đã đăng ký học chương trình thứ hai."
+  },
+  {
+    "id": 49,
+    "question": "Cuối học kỳ em lười nên bỏ qua việc làm khảo sát đánh giá hoạt động giảng dạy của giảng viên thì có bị phạt gì không?",
+    "ground_truth": "Có. Việc đánh giá giảng viên được tính vào điểm rèn luyện. Nếu bạn không làm khảo sát môn nào (tỷ lệ 0%), bạn sẽ bị trừ 5 điểm rèn luyện.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "16.9.2025_TB triển khai KS SV về HĐGD của GV_HKI 25-26 final.signed.pdf",
+    "evidence_location": "Bảng ghi nhận điểm rèn luyện (Trang 2)",
+    "evidence_quote_or_summary": "Phần trăm thực hiện khảo sát trên tổng số môn học của học kỳ: <=10% -> Số điểm đạt được: -5 (bị trừ 5 điểm)."
+  },
+  {
+    "id": 50,
+    "question": "Sinh viên hệ Đại học liên thông từ hệ Cao đẳng lên (Cử nhân) thì thời gian đào tạo tối đa là bao nhiêu năm?",
+    "ground_truth": "Thời gian hoàn thành khóa học tối đa là 4,0 năm.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Bảng thời gian khóa học thiết kế, Điều 2 (Khoản 8)",
+    "evidence_quote_or_summary": "STT 1 - Liên thông chính quy từ cao đẳng (cử nhân) - Thời gian khóa học thiết kế: 2,0 năm - Thời gian hoàn thành tối đa: 4,0 năm."
+  },
+  {
+    "id": 51,
+    "question": "Học phần Kỹ năng giao tiếp tiếng Anh 1 có bao nhiêu tín chỉ?",
+    "ground_truth": "Học phần Kỹ năng giao tiếp tiếng Anh 1 (ENCS140026) có 4 tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "1238 qd ban hanh quy dinh cac hoc phan ngoai ngu trong chuong trinh dao tao trinh do DH tu khoa 2023.pdf",
+    "evidence_location": "Mục 1. Quy định các học phần ngoại ngữ",
+    "evidence_quote_or_summary": "Học phần Kỹ năng giao tiếp tiếng Anh 1 (ENCS140026) – 4 Tín chỉ"
+  },
+  {
+    "id": 52,
+    "question": "Sinh viên khóa 2023 có thể nộp chứng chỉ IELTS để miễn học phần tiếng Anh trong bao lâu?",
+    "ground_truth": "Sinh viên chỉ được sử dụng chứng chỉ để miễn thi các học phần Kỹ năng giao tiếp tiếng Anh trong 07 học kỳ đầu tiên.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Mục 2.b, trang 2",
+    "evidence_quote_or_summary": "Sinh viên chỉ được sử dụng chứng chỉ để miễn thi các học phần Kỹ năng giao tiếp tiếng Anh trong 7 học kỳ đầu tiên."
+  },
+  {
+    "id": 53,
+    "question": "Mức điểm TOEIC 4 kỹ năng để được miễn học phần Kỹ năng giao tiếp tiếng Anh 1 là bao nhiêu?",
+    "ground_truth": "Mức điểm TOEIC (4 kỹ năng) để miễn Kỹ năng giao tiếp tiếng Anh 1 là từ 385 đến 785.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Bảng tại Mục 2.b, trang 2",
+    "evidence_quote_or_summary": "Bảng quy định: TOEIC (4 kỹ năng) mức điểm 385-785 được MIỄN THI Kỹ năng giao tiếp tiếng Anh 1."
+  },
+  {
+    "id": 54,
+    "question": "Thời gian khảo sát lấy ý kiến sinh viên về hoạt động giảng dạy HKI 2025-2026 là khi nào?",
+    "ground_truth": "Từ ngày 15/09/2025 đến ngày 31/12/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "16.9.2025_TB triển khai KS SV về HĐGD của GV_HKI 25-26 final.signed.pdf",
+    "evidence_location": "Mục 1. Thời gian khảo sát",
+    "evidence_quote_or_summary": "Từ ngày 15/09/2025 đến ngày 31/12/2025"
+  },
+  {
+    "id": 55,
+    "question": "Sinh viên thực hiện khảo sát trên 90% số môn học sẽ được cộng bao nhiêu điểm rèn luyện?",
+    "ground_truth": "Sinh viên sẽ được cộng 5 điểm rèn luyện (tương ứng mức 91-100%).",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "16.9.2025_TB triển khai KS SV về HĐGD của GV_HKI 25-26 final.signed.pdf",
+    "evidence_location": "Bảng tại Mục 3. Ghi nhận điểm rèn luyện",
+    "evidence_quote_or_summary": "Phần trăm thực hiện: 91-100 -> Số điểm đạt được: 5."
+  },
+  {
+    "id": 56,
+    "question": "Học phí Khối ngành Công nghệ kỹ thuật - Sản xuất chế biến cho khóa 2023 là bao nhiêu?",
+    "ground_truth": "Đối với hệ chính quy chương trình chuẩn: 18.000.000 đồng/học kỳ. Đối với hệ chính quy chương trình đào tạo chất lượng cao: 23.200.000 đồng/học kỳ.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 1 (Hệ chính quy bậc đại học chương trình chuẩn) và Bảng Mục 3 (Hệ chính quy chương trình chất lượng cao)",
+    "evidence_quote_or_summary": "Mục 1: Khóa 2023, Khối ngành Công nghệ kỹ thuật - Sản xuất chế biến: 18.000.000 đồng/học kỳ. Mục 3: Khóa 2023, Khối ngành công nghệ kỹ thuật - sản xuất chế biến: 23.200.000 đồng/học kỳ."
+  },
+  {
+    "id": 57,
+    "question": "Học phí khóa 2025 có bao gồm học phần Giáo dục quốc phòng và an ninh không?",
+    "ground_truth": "Không, học phí khóa 2025 không bao gồm các học phần GDQP&AN và GDTC.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Phần Ghi chú dưới bảng Mục 1 (trang 2)",
+    "evidence_quote_or_summary": "Học phí khóa 2025 không bao gồm các học phần GDQP&AN và GDTC."
+  },
+  {
+    "id": 58,
+    "question": "Đơn giá một tín chỉ cho học phần GDQP&AN khóa 2025 là bao nhiêu?",
+    "ground_truth": "853.000 đồng/tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Phần Ghi chú dưới bảng Mục 1 (trang 2)",
+    "evidence_quote_or_summary": "Học phí học phần GDQP&AN, GDTC khóa 2024, 2025: 853.000 đồng/Tín chỉ."
+  },
+  {
+    "id": 59,
+    "question": "Thời gian đăng ký học phần đợt 1 cho HKI năm học 2025-2026 là khi nào?",
+    "ground_truth": "Từ 09g00 ngày 11/8/2025 đến 07g30 ngày 18/8/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần, phần Đợt 1",
+    "evidence_quote_or_summary": "Đợt 1: Thời gian đăng ký học phần từ 09g00 ngày 11/8/2025 đến 07g30 ngày 18/8/2025"
+  },
+  {
+    "id": 60,
+    "question": "Sinh viên đăng ký tối đa bao nhiêu tín chỉ trong một học kỳ?",
+    "ground_truth": "Tối đa là 28 tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Khoản 4, Điều 9",
+    "evidence_quote_or_summary": "Khối lượng tối đa không vượt quá 28 tín chỉ"
+  },
+  {
+    "id": 61,
+    "question": "Sinh viên năm cuối được ưu tiên đăng ký học phần như thế nào?",
+    "ground_truth": "Được ưu tiên đăng ký trước từ 1 đến 2 ngày so với các sinh viên khác.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần",
+    "evidence_quote_or_summary": "Nhằm tạo điều kiện thuận lợi cho các SV năm cuối và SV học kéo dài ra trường đúng thời hạn, phòng Đào tạo sẽ ưu tiên cho các SV năm cuối và SV học kéo dài đăng ký học phần trước từ 1 đến 2 ngày so với các SV khác"
+  },
+  {
+    "id": 62,
+    "question": "Địa chỉ website để đăng ký môn học là gì?",
+    "ground_truth": "https://dkmh.hcmute.edu.vn",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục C. Cách thức ĐKMH qua mạng",
+    "evidence_quote_or_summary": "Sinh viên truy cập vào website đăng ký học phần: https://dkmh.hcmute.edu.vn"
+  },
+  {
+    "id": 63,
+    "question": "Điều kiện để sinh viên được xét tốt nghiệp về điểm trung bình tích lũy là bao nhiêu?",
+    "ground_truth": "Điểm trung bình chung tích lũy toàn khóa học đạt từ 5.00 trở lên (với khóa 2020 trở về trước) hoặc từ mức Trung bình trở lên (với khóa 2021 trở đi).",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "TB xét TN đợt 1 HKI-25.26 tháng 11.2025.pdf",
+    "evidence_location": "Mục II. TIÊU CHUẨN TỐT NGHIỆP",
+    "evidence_quote_or_summary": "Đối với khóa 2020 trở về trước: Điểm trung bình chung tích lũy của toàn khóa học đạt từ 5.00 trở lên; Khóa 2021 trở đi áp dụng Quy chế 3116 (Điểm trung bình tích lũy của toàn khóa học đạt từ trung bình trở lên)."
+  },
+  {
+    "id": 64,
+    "question": "Lệ phí làm bằng tốt nghiệp cho sinh viên Đại học và ngành Sư phạm Tiếng Anh là bao nhiêu?",
+    "ground_truth": "120.000 VNĐ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "Thông báo nộp lệ phí làm bằng TN ĐHCQ đợt 5.2025.pdf",
+    "evidence_location": "Mục 1. Lệ phí",
+    "evidence_quote_or_summary": "Sinh viên Đại học và ngành Sư phạm Tiếng Anh: 120.000Đ (Một trăm hai mươi ngàn đồng)."
+  },
+  {
+    "id": 65,
+    "question": "Thời gian nộp đơn xin điểm I (online) đợt 1 học kỳ 1/2025-2026 là khi nào?",
+    "ground_truth": "Từ ngày 20/10/2025 đến ngày 31/10/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Mục I.2. Thời gian nộp đơn điểm I (online)",
+    "evidence_quote_or_summary": "Thời gian nộp đơn điểm I (online): từ ngày 20-31/10/2025."
+  },
+  {
+    "id": 66,
+    "question": "Sinh viên bị ốm trong đợt thi cần làm gì để xin điểm I?",
+    "ground_truth": "Làm đơn xin nhận điểm I các học phần không tham gia thi kèm giấy tờ của cơ quan y tế.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Mục I.1. Điều kiện nộp đơn điểm I",
+    "evidence_quote_or_summary": "Sinh viên nghỉ ốm trong đợt thi: làm đơn xin nhận điểm I các học phần không tham gia thi được trong thời gian ốm kèm các giấy tờ của cơ quan y tế"
+  },
+  {
+    "id": 67,
+    "question": "Học phần thay thế được đăng ký trong trường hợp nào?",
+    "ground_truth": "Khi môn học trong chương trình đào tạo không còn mở lớp và môn học thay thế đã được Khoa tư vấn và đồng ý; hoặc đã đăng ký môn học cùng tên môn, số tín chỉ nhưng khác mã môn học và có nội dung tương đương được Khoa đồng ý.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "Thông báo nhận đơn xin thay thế môn học.pdf",
+    "evidence_location": "Mục I.1. Điều kiện đăng ký môn học thay thế",
+    "evidence_quote_or_summary": "Môn học trong chương trình đào tạo không còn mở lớp và môn học thay thế đã được Khoa tư vấn và đồng ý; hoặc đã đăng ký môn học cùng tên môn, số tín chỉ nhưng khác mã môn học và có nội dung tương đương được Khoa đồng ý."
+  },
+  {
+    "id": 68,
+    "question": "Thời gian nhận đơn xin thay thế môn học đợt 1 của HKI 2025-2026?",
+    "ground_truth": "Từ ngày 11/08/2025 đến hết ngày 23/08/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "Thông báo nhận đơn xin thay thế môn học.pdf",
+    "evidence_location": "Mục I.2. Các mốc thời gian đăng ký môn học thay thế trong học kỳ",
+    "evidence_quote_or_summary": "Đợt 1: ... Cụ thể: từ ngày 11/08/2025 đến hết ngày 23/08/2025."
+  },
+  {
+    "id": 69,
+    "question": "Để miễn thi Giáo dục thể chất, sinh viên cần điều kiện gì?",
+    "ground_truth": "Sinh viên có vấn đề về sức khỏe không thể tham gia học, hoặc đã tích lũy học phần có cùng nội dung ở một trường đại học khác.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo đăng ký miễn thi giáo dục thể chất, giáo dục quốc phòng đối với khóa 2025.pdf",
+    "evidence_location": "Mục I.2. Điều kiện đăng ký miễn thi giáo dục thể chất (GDTC)",
+    "evidence_quote_or_summary": "Sinh viên có vấn đề về sức khỏe không thể tham gia học một hoặc một số học phần giáo dục thể chất hoặc đã tích lũy học phần có cùng nội dung ở một trường đại học khác được xem xét miễn thi các học phần giáo dục thể chất đó."
+  },
+  {
+    "id": 70,
+    "question": "Chứng chỉ VSTEP bậc mấy thì được miễn thi ngoại ngữ đầu ra (không chuyên ngữ)?",
+    "ground_truth": "VSTEP Bậc 3.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Bảng Mục 4. Điều kiện để được miễn thi ngoại ngữ đầu ra, trang 2",
+    "evidence_quote_or_summary": "Mức điểm tối thiểu: VSTEP - Bậc 3."
+  },
+  {
+    "id": 71,
+    "question": "Mức học phí cho khối ngành Kiến trúc và quy hoạch khóa 2024 là bao nhiêu?",
+    "ground_truth": "20.000.000 đồng/học kỳ (áp dụng cho hệ chính quy bậc đại học chương trình chuẩn).",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 1. Hệ chính quy bậc đại học chương trình chuẩn",
+    "evidence_quote_or_summary": "Khóa 2023, 2024, 2025 - Khối ngành Kiến trúc và quy hoạch: 20.000.000 đồng/học kỳ."
+  },
+  {
+    "id": 72,
+    "question": "Học phí học lại cho hệ vừa làm vừa học là bao nhiêu?",
+    "ground_truth": "910.000 đồng/tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Mục 5. Hệ vừa làm vừa học, đào tạo từ xa",
+    "evidence_quote_or_summary": "Học phí học lại, học vượt đối với tất cả các khóa: 910.000đ/tín chỉ."
+  },
+  {
+    "id": 73,
+    "question": "Sinh viên chương trình Sư phạm Kỹ thuật đóng lệ phí làm bằng tốt nghiệp bao nhiêu?",
+    "ground_truth": "180.000 VNĐ (áp dụng cho sinh viên học chương trình Sư phạm kỹ thuật có chứng chỉ sư phạm).",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo nộp lệ phí làm bằng TN ĐHCQ đợt 5.2025.pdf",
+    "evidence_location": "Mục 1. Lệ phí",
+    "evidence_quote_or_summary": "Riêng sinh viên học chương trình Sư phạm kỹ thuật (có chứng chỉ sư phạm): 180.000Đ (Một trăm tám mươi ngàn đồng)."
+  },
+  {
+    "id": 74,
+    "question": "Sinh viên nộp chứng chỉ ngoại ngữ tại đâu?",
+    "ground_truth": "Sinh viên đăng ký trực tuyến qua trang online của trường (https://online.hcmute.edu.vn), tại mục 'Chức năng trực tuyến', chọn 'Đăng ký các mẫu đơn'.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Mục 5. Cách thức nộp, trang 2",
+    "evidence_quote_or_summary": "Sinh viên đăng ký trên trang online của trường, link: https://online.hcmute.edu.vn, Mục “Chức năng trực tuyến/Đăng ký các mẫu đơn”..."
+  },
+  {
+    "id": 75,
+    "question": "Nếu sinh viên nộp chứng chỉ Aptis ESOL B1 thì được miễn học phần nào?",
+    "ground_truth": "Sinh viên đạt chứng chỉ Aptis ESOL General (mức điểm 102-149) hoặc Aptis ESOL Advanced (mức điểm 74-85) sẽ được miễn học phần Kỹ năng giao tiếp tiếng Anh 2.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Bảng Mục 2.b, trang 2",
+    "evidence_quote_or_summary": "Aptis ESOL General (102-149), Aptis ESOL Advanced (74-85) -> Được MIỄN THI Kỹ năng giao tiếp tiếng Anh 2."
+  },
+  {
+    "id": 76,
+    "question": "Mã học phần của Kỹ năng giao tiếp tiếng Anh 2 là gì?",
+    "ground_truth": "ENCS240026.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Mục 2.a",
+    "evidence_quote_or_summary": "Học phần Kỹ năng giao tiếp tiếng Anh 2 (mã học phần: ENCS240026)."
+  },
+  {
+    "id": 77,
+    "question": "Sinh viên có được phép rút bớt học phần trong thời gian ưu tiên đăng ký không?",
+    "ground_truth": "Tài liệu không quy định cấm việc rút bớt học phần trong thời gian ưu tiên. Tuy nhiên, lưu ý rằng trong thời gian này, sinh viên KHÔNG được phép đăng ký học các học phần cải thiện và học phần ngoài chương trình đào tạo.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần",
+    "evidence_quote_or_summary": "Trong thời gian ưu tiên SV không được phép đăng ký học các học phần cải thiện và các học phần ngoài chương trình đào tạo."
+  },
+  {
+    "id": 78,
+    "question": "Thời gian chỉnh sửa đăng ký học phần đợt 1 HKI 2025-2026?",
+    "ground_truth": "Từ 09h00 ngày 19/8/2025 đến 07h30 ngày 25/8/2025.",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Phần đầu thông báo và Mục B (Phân luồng về thời gian chỉnh sửa đăng ký học phần)",
+    "evidence_quote_or_summary": "Thời gian chỉnh sửa đăng ký học phần từ 09h00 ngày 19/8/2025 đến 07h30 ngày 25/8/2025."
+  },
+  {
+    "id": 79,
+    "question": "Hệ CLC tiếng Việt khóa 2023 học phí bao nhiêu một tín chỉ?",
+    "ground_truth": "Khóa 2023 hệ chất lượng cao có mức học phí là 1.237.000 đồng/tín chỉ (đối với Khối ngành công nghệ kỹ thuật - sản xuất chế biến) và 1.189.000 đồng/tín chỉ (đối với Khối ngành khoa học xã hội - quản lý kinh doanh).",
+    "difficulty": "medium",
+    "question_type": "multi_hop",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 3. Hệ chính quy bậc đại học chương trình đào tạo chất lượng cao",
+    "evidence_quote_or_summary": "Khóa 2023: Khối ngành công nghệ kỹ thuật - sản xuất chế biến là 1.237.000 đồng/tín chỉ; Khối ngành khoa học xã hội - quản lý kinh doanh là 1.189.000 đồng/tín chỉ."
+  },
+  {
+    "id": 80,
+    "question": "Trường hợp nào sinh viên được tạm hoãn học môn GDQP&AN?",
+    "ground_truth": "Sinh viên vì lý do sức khỏe phải dừng học thời gian dài để điều trị (phải có giấy xác nhận của bệnh viện) hoặc sinh viên nữ đang mang thai/nghỉ chế độ thai sản.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo đăng ký miễn thi giáo dục thể chất, giáo dục quốc phòng đối với khóa 2025.pdf",
+    "evidence_location": "Mục I.1. Khoản 4",
+    "evidence_quote_or_summary": "Đối tượng được tạm hoãn học môn học GDQP&AN: a) Học sinh, sinh viên vì lý do sức khỏe phải dừng học trong thời gian dài để điều trị... b) Học sinh, sinh viên là nữ đang mang thai hoặc trong thời gian nghỉ chế độ thai sản..."
+  },
+  {
+    "id": 81,
+    "question": "Thời gian nộp hình làm bằng tốt nghiệp cho sinh viên Sư phạm Kỹ thuật?",
+    "ground_truth": "Từ ngày 03/10/2025 đến ngày 15/10/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "Thông báo nộp lệ phí làm bằng TN ĐHCQ đợt 5.2025.pdf",
+    "evidence_location": "Mục 4. Đối với sinh viên học chương trình Sư phạm Kỹ thuật",
+    "evidence_quote_or_summary": "Thời gian nhận hình: từ 03/10/2025 - 15/10/2025."
+  },
+  {
+    "id": 82,
+    "question": "Tài khoản ngân hàng để đóng lệ phí tốt nghiệp là gì?",
+    "ground_truth": "Số tài khoản: 3141757777 tại ngân hàng BIDV - chi nhánh Đông Sài Gòn.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "Thông báo nộp lệ phí làm bằng TN ĐHCQ đợt 5.2025.pdf",
+    "evidence_location": "Mục 2. Cách thức đóng: Chuyển khoản",
+    "evidence_quote_or_summary": "Số tài khoản: 3141757777 tại ngân hàng BIDV - chi nhánh Đông Sài Gòn"
+  },
+  {
+    "id": 83,
+    "question": "Sinh viên có thể đăng ký môn học tại đâu ngoài phòng máy trường?",
+    "ground_truth": "Tại tất cả các máy tính có nối mạng Internet trong hoặc ngoài trường.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục D. Địa điểm ĐKMH qua mạng",
+    "evidence_quote_or_summary": "SV có thể đăng ký tại tất cả các máy tính có nối mạng Internet trong hoặc ngoài trường."
+  },
+  {
+    "id": 84,
+    "question": "Nếu quên mật khẩu email sinh viên thì liên hệ ai?",
+    "ground_truth": "Liên hệ thầy Nguyễn Hà (Trung tâm Thông tin Máy tính) qua ĐT: 0913.889.739 hoặc Email: haspkt@hcmute.edu.vn.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục Chú ý (trang 4)",
+    "evidence_quote_or_summary": "đề nghị SV liên hệ thầy Nguyễn Hà (ĐT:0913.889.739, Email: haspkt@hcmute.edu.vn - Trung tâm Thông tin Máy tính để được hỗ trợ)."
+  },
+  {
+    "id": 85,
+    "question": "Hạn chót nộp đơn xin thay thế môn học đợt 2 là ngày nào?",
+    "ground_truth": "Hết ngày 01/11/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "Thông báo nhận đơn xin thay thế môn học.pdf",
+    "evidence_location": "Mục I.2. Các mốc thời gian đăng ký môn học thay thế trong học kỳ",
+    "evidence_quote_or_summary": "Đợt 2: ... Cụ thể: từ ngày 27/10/2025 đến hết ngày 01/11/2025."
+  },
+  {
+    "id": 86,
+    "question": "Điểm tổng kết học phần Kỹ năng giao tiếp tiếng Anh có tính vào điểm trung bình tích lũy không?",
+    "ground_truth": "Không tính vào điểm trung bình học kỳ và điểm trung bình tích lũy.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "1238 qd ban hanh quy dinh cac hoc phan ngoai ngu trong chuong trinh dao tao trinh do DH tu khoa 2023.pdf",
+    "evidence_location": "Mục 4. Cách thức đánh giá học phần",
+    "evidence_quote_or_summary": "Điểm tổng kết của các học phần Kỹ năng giao tiếp tiếng Anh sẽ hiển thị trên bảng điểm sinh viên nhưng không tính vào điểm trung bình học kỳ cũng như điểm trung bình tích lũy của sinh viên."
+  },
+  {
+    "id": 87,
+    "question": "Sĩ số lớp học phần Kỹ năng giao tiếp tiếng Anh là bao nhiêu?",
+    "ground_truth": "Khoảng từ 20 đến 30 sinh viên.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "1238 qd ban hanh quy dinh cac hoc phan ngoai ngu trong chuong trinh dao tao trinh do DH tu khoa 2023.pdf",
+    "evidence_location": "Mục 3. Hình thức tổ chức giảng dạy",
+    "evidence_quote_or_summary": "Biên chế mỗi lớp học phần Kỹ năng giao tiếp tiếng Anh có sĩ số khoảng từ 20 đến 30 sinh viên để đảm bảo chất lượng cho người học."
+  },
+  {
+    "id": 88,
+    "question": "Sinh viên khóa 2019 trở về trước xét tốt nghiệp cần điểm TOEIC 2 kỹ năng bao nhiêu?",
+    "ground_truth": "Đối với sinh viên không thuộc các ngành chuyên ngoại ngữ: 450 điểm (khóa 2012, 2013) hoặc 500 điểm (từ khóa 2014 trở đi).",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "TB xét TN đợt 1 HKI-25.26 tháng 11.2025.pdf",
+    "evidence_location": "Mục II. TIÊU CHUẨN TỐT NGHIỆP, phần Đối với khóa 2020 trở về trước",
+    "evidence_quote_or_summary": "Đối với sinh viên không thuộc các ngành chuyên ngoại ngữ: + 450 điểm của bài thi TOEIC 2 kỹ năng đọc và nghe (áp dụng đối với khóa 2012, 2013); + 500 điểm của bài thi TOEIC 2 kỹ năng đọc và nghe... (áp dụng từ khóa 2014 trở đi)."
+  },
+  {
+    "id": 89,
+    "question": "Sinh viên hệ đại trà khóa 2022 đăng ký học phần vào đợt mấy?",
+    "ground_truth": "Đợt 2 (Từ 09g00 ngày 12/8/2025).",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần",
+    "evidence_quote_or_summary": "Đợt 2: Thời gian đăng ký học phần từ 09g00 ngày 12/8/2025... bao gồm: SV hệ Đại trà khóa 2022..."
+  },
+  {
+    "id": 90,
+    "question": "Phí kéo dài luận văn tốt nghiệp cho học viên cao học là bao nhiêu?",
+    "ground_truth": "1.000.000 đồng/tháng.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 6. Hệ chính quy bậc đào tạo sau đại học (Trang 4)",
+    "evidence_quote_or_summary": "Phí kéo dài luận văn/đề án tốt nghiệp (5) - Mức thu NH 2025-2026: 1.000.000 đồng/tháng"
+  },
+  {
+    "id": 91,
+    "question": "Học phí chương trình liên kết với Đại học Sunderland năm 4 là bao nhiêu?",
+    "ground_truth": "170.000.000 đồng/năm học (đối với Khóa 2025).",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 7.1.1 Học phí học lần đầu",
+    "evidence_quote_or_summary": "Đại học năm cuối (Năm 4) - Khóa 2025: 170.000.000 Đồng/ năm học."
+  },
+  {
+    "id": 92,
+    "question": "Quy định số lượng tối thiểu để mở lớp cho hệ Đại học chính quy tiếng Việt là bao nhiêu?",
+    "ground_truth": "30 sinh viên/lớp.",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Mục II. QUY ĐỊNH SỐ LƯỢNG TỐI THIỂU ĐỐI VỚI ĐĂNG KÝ MỞ LỚP",
+    "evidence_quote_or_summary": "Hệ Đại học chính quy chương trình tiếng Việt: 30 sinh viên/lớp"
+  },
+  {
+    "id": 93,
+    "question": "Sinh viên xem kết quả duyệt đơn miễn thi GDTC ở đâu?",
+    "ground_truth": "Trên trang online, tại mục \"Thông báo cá nhân\".",
+    "difficulty": "easy",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo đăng ký miễn thi giáo dục thể chất, giáo dục quốc phòng đối với khóa 2025.pdf",
+    "evidence_location": "Bước 6",
+    "evidence_quote_or_summary": "Bước 6: Sinh viên theo dõi kết quả qua tin nhắn trên trang online, mục “Thông báo cá nhân”."
+  },
+  {
+    "id": 94,
+    "question": "Thời gian công bố kết quả duyệt đơn điểm I đợt 1?",
+    "ground_truth": "Dự kiến ngày 12/11/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Mục II. ĐỐI VỚI KHOA/ VIỆN QUẢN SINH VIÊN, PHÒNG ĐÀO TẠO",
+    "evidence_quote_or_summary": "Dự kiến công bố kết quả duyệt điểm I cho sinh viên vào ngày 12/11/2025."
+  },
+  {
+    "id": 95,
+    "question": "Sinh viên lớp CLC có được đăng ký học với lớp Đại trà không?",
+    "ground_truth": "Không được phép. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của Ban Chủ nhiệm khoa quản ngành và phòng Đào tạo.",
+    "difficulty": "hard",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục D. Chú ý",
+    "evidence_quote_or_summary": "SV hệ CLC không được đăng ký học với các lớp Đại trà hoặc ngược lại. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của BCN khoa quản ngành và phòng Đào tạo."
+  },
+  {
+    "id": 96,
+    "question": "Học phí môn Giáo dục thể chất được tính như thế nào đối với khóa 2025?",
+    "ground_truth": "853.000 đồng/Tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Ghi chú dưới Bảng Mục 1 (Trang 2)",
+    "evidence_quote_or_summary": "Học phí học phần GDQP&AN, GDTC khóa 2024, 2025: 853.000 đồng/Tín chỉ."
+  },
+  {
+    "id": 97,
+    "question": "Sinh viên nộp chứng chỉ ngoại ngữ trong khoảng thời gian nào của học kỳ?",
+    "ground_truth": "Sinh viên nộp chứng chỉ ngoại ngữ theo thông báo của Phòng Đào tạo đầu mỗi học kỳ. Cụ thể trong HK1/2025-2026: Sinh viên khóa 2025 nộp từ 08/09 đến 19/09/2025. Sinh viên các khóa khác nộp đợt 1 trong 1 tuần đầu học kỳ (11/08 - 16/08/2025) hoặc đợt 2 (27/10 - 01/11/2025).",
+    "difficulty": "hard",
+    "question_type": "timeline",
+    "file_source": "TB Chuyển điểm Ngoại ngữ.pdf",
+    "evidence_location": "Nội dung Thông báo",
+    "evidence_quote_or_summary": "Đợt 1: Nhận trong 01 tuần đầu học kỳ. Cụ thể: từ ngày 11/08/2025 đến hết ngày 16/08/2025... Đợt 2: Nhận trong 01 tuần của học kỳ. Cụ thể: từ ngày 27/10/2025 đến hết ngày 01/11/2025."
+  },
+  {
+    "id": 98,
+    "question": "Điểm I là gì?",
+    "ground_truth": "Điểm chưa hoàn thiện do được phép hoãn thi, kiểm tra.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Khoản 4.d, Điều 11",
+    "evidence_quote_or_summary": "I: Điểm chưa hoàn thiện do được phép hoãn thi, kiểm tra;"
+  },
+  {
+    "id": 99,
+    "question": "Sinh viên có thể trả nợ điểm I trong bao lâu?",
+    "ground_truth": "Trong tối đa hai học kỳ tiếp theo.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "Thông báo nhận đơn xin điểm I - đợt 1 HK1.25-26.pdf",
+    "evidence_location": "Bước 7 (Trang Phụ lục)",
+    "evidence_quote_or_summary": "Nếu được duyệt đơn, sinh viên nhấn “In đơn đăng ký” in ra giấy để thi trả điểm I trong tối đa hai học kỳ tiếp theo."
+  },
+  {
+    "id": 100,
+    "question": "Học phí chương trình liên kết Đại học Tongmyong khóa 2025 học lần đầu là bao nhiêu?",
+    "ground_truth": "80.000.000 đồng/năm học.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 7.3",
+    "evidence_quote_or_summary": "7.3. Mức thu học phí Chương trình liên kết đào tạo với Đại học Tongmyong (Hàn Quốc)... Khóa 2025: Học lần đầu: 80.000.000 Đồng/năm học"
+  },
+  {
+    "id": 101,
+    "question": "ngành ktdl tổng bn tc z",
+    "ground_truth": "Ngành Kỹ thuật dữ liệu (KTDL) có tổng khối lượng kiến thức toàn khóa là 150 tín chỉ (không bao gồm khối kiến thức Ngoại ngữ, Giáo dục thể chất và Giáo dục quốc phòng).",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "16_NganhKyThuatDuLieu.pdf",
+    "evidence_location": "Mục 5. Khối lượng kiến thức toàn khoá, trang 4",
+    "evidence_quote_or_summary": "5. Khối lượng kiến thức toàn khoá: 150 tín chỉ (Không bao gồm khối kiến thức Ngoại Ngữ, Giáo dục thể chất và Giáo dục Quốc phòng)"
+  },
+  {
+    "id": 102,
+    "question": "dkmh bổ sung đợt 2 hki 25-26 mở lúc nào",
+    "ground_truth": "Thời gian đăng ký học phần bổ sung qua mạng đợt 2 cho HKI 2025-2026 là từ 09g00 ngày 27/10/2025 đến 07g30 ngày 03/11/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "3618_TB_KH dang ky hoc phan bo sung dot 2_HKI_2526.pdf",
+    "evidence_location": "Đoạn 3, trang 1",
+    "evidence_quote_or_summary": "Thời gian đăng ký bổ sung học phần từ 09g00 ngày 27/10/2025 đến 07g30 ngày 03/11/2025."
+  },
+  {
+    "id": 103,
+    "question": "đk avđr đợt tháng 11/2025 ở đâu",
+    "ground_truth": "Sinh viên đăng ký trực tiếp tại phòng A1-202 (Tòa nhà Trung tâm).",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "3585.Thông báo vv đăng ký thi kiểm tra trình độ tiếng anh đầu ra đợt tháng 112025.PDF",
+    "evidence_location": "Mục 2. Hình thức đăng ký",
+    "evidence_quote_or_summary": "2. Hình thức đăng ký: Sinh viên đăng ký trực tiếp tại phòng A1-202 - Tòa nhà Trung tâm."
+  },
+  {
+    "id": 104,
+    "question": "kltn kéo dài đóng thêm nhiu tiền",
+    "ground_truth": "Mức thu học phí kéo dài luận văn/đề án tốt nghiệp là 1.000.000 đồng/tháng.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng mục 6. Hệ chính quy bậc đào tạo sau đại học, trang 4",
+    "evidence_quote_or_summary": "Phí kéo dài luận văn/đề án tốt nghiệp (5) - Mức thu NH 2025-2026: 1.000.000 đồng/tháng"
+  },
+  {
+    "id": 105,
+    "question": "sv clc đk lớp đại trà dc ko",
+    "ground_truth": "Không được phép. Sinh viên hệ Chất lượng cao (CLC) không được đăng ký học với các lớp Đại trà hoặc ngược lại. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của Ban Chủ nhiệm khoa quản ngành và Phòng Đào tạo.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục Chú ý, trang 4",
+    "evidence_quote_or_summary": "SV hệ CLC không được đăng ký học với các lớp Đại trà hoặc ngược lại. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của BCN khoa quản ngành và phòng Đào tạo."
+  },
+  {
+    "id": 106,
+    "question": "quên mk mail sv gọi ai",
+    "ground_truth": "Bạn có thể liên hệ Thầy Nguyễn Hà tại Trung tâm Thông tin Máy tính (Điện thoại: 0913.889.739, Email: haspkt@hcmute.edu.vn) để được hỗ trợ.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục Chú ý, trang 4",
+    "evidence_quote_or_summary": "nếu gặp khó khăn về việc sử dụng địa chỉ email của trường đã cấp cho SV, đề nghị SV liên hệ Thầy Nguyễn Hà (ĐT:0913.889.739, Email: haspkt@hcmute.edu.vn - Trung tâm Thông tin Máy tính để được hỗ trợ)."
+  },
+  {
+    "id": 107,
+    "question": "ccnn nộp lúc nào hki 25-26",
+    "ground_truth": "Đối với sinh viên khóa 2025, thời gian nhận chứng chỉ ngoại ngữ (CCNN) là từ ngày 08/9/2025 đến hết ngày 19/9/2025.",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Mục 1. Thời gian nhận",
+    "evidence_quote_or_summary": "1. Thời gian nhận: từ ngày 08/9/2025 đến hết ngày 19/9/2025."
+  },
+  {
+    "id": 108,
+    "question": "cảnh báo hv 3 lần bị j",
+    "ground_truth": "Sinh viên sẽ bị buộc thôi học nếu có 3 lần cảnh báo học tập liên tiếp.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 14, Khoản 3.a",
+    "evidence_quote_or_summary": "Sinh viên bị buộc thôi học trong các trường hợp sau: a) Có 3 lần cảnh báo học tập liên tiếp;"
+  },
+  {
+    "id": 109,
+    "question": "1 kì dktc tối đa mấy tc",
+    "ground_truth": "Khối lượng học tập tối đa của sinh viên trong mỗi học kỳ không vượt quá 28 tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 9, Khoản 4.b",
+    "evidence_quote_or_summary": "Khối lượng học tập của sinh viên trong mỗi học kỳ được quy định như sau: ... b) Khối lượng tối đa không vượt quá 28 tín chỉ;"
+  },
+  {
+    "id": 110,
+    "question": "đtbtl năm 1 bn thì bị thử thách học tập",
+    "ground_truth": "Sinh viên trình độ năm thứ nhất sẽ bị đưa vào diện thử thách học tập nếu Điểm trung bình tích lũy (ĐTBTL) đạt dưới 1,2.",
+    "difficulty": "medium",
+    "question_type": "abbreviation",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 13, Khoản 1.b",
+    "evidence_quote_or_summary": "b) Sinh viên bị thử thách học tập khi thuộc một trong hai điều kiện: ... ĐTBTL đạt dưới 1,2 đối với sinh viên trình độ năm thứ nhất"
+  },
+  {
+    "id": 111,
+    "question": "học 2 bằng đk ntn",
+    "ground_truth": "Sinh viên được đăng ký học chương trình thứ 2 sớm nhất khi đã được xếp trình độ năm 2 của chương trình 1. Tại thời điểm đăng ký, sinh viên phải có ĐTBTL xếp loại Khá trở lên, HOẶC xếp loại Trung bình và đáp ứng điều kiện trúng tuyển của chương trình thứ 2 trong năm tuyển sinh đó.",
+    "difficulty": "hard",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 20, Khoản 2",
+    "evidence_quote_or_summary": "Sinh viên được đăng ký học chương trình thứ hai sớm nhất khi đã được xếp trình độ năm thứ hai của chương trình thứ nhất. ... a) Học lực tính theo ĐTBTL xếp loại khá trở lên... b) Học lực tính theo ĐTBTL xếp loại trung bình và đáp ứng điều kiện trúng tuyển của chương trình thứ hai"
+  },
+  {
+    "id": 112,
+    "question": "tttn ngành cntt mấy tc",
+    "ground_truth": "Môn Thực tập tốt nghiệp (CNTT) có khối lượng là 2 tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "15_NganhCNTT.pdf",
+    "evidence_location": "Bảng phần Chuyên ngành, trang 3 và Mục 7 Học kỳ 7, trang 14",
+    "evidence_quote_or_summary": "Thực tập tốt nghiệp (CNTT) 2... ITIN421085 Thực tập tốt nghiệp (CNTT) - Số TC: 2"
+  },
+  {
+    "id": 113,
+    "question": "điểm d+ có tính qua môn chưa",
+    "ground_truth": "Từ học kỳ 2 năm học 2022-2023 trở về sau, học phần được tính là đạt và tích lũy khi có điểm từ D+ trở lên.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 11, Bảng 2 và mục 4.a",
+    "evidence_quote_or_summary": "Học phần chỉ được tính tích lũy khi đạt... từ điểm D+ trở lên áp dụng từ học kỳ 2/2022-2023 trở về sau."
+  },
+  {
+    "id": 114,
+    "question": "gdtc 1 hki 25-26 mã là j",
+    "ground_truth": "Mã học phần mới của Giáo dục thể chất 1 áp dụng từ năm học 2025-2026 là PHED110130.",
+    "difficulty": "easy",
+    "question_type": "abbreviation",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Bảng mục 5, trang 3",
+    "evidence_quote_or_summary": "Từ học kỳ 1 năm học 2025-2026 sinh viên tất cả các khóa sẽ học theo mã Giáo dục thể chất mới... STT 1: Mã học phần PHED110130 - Tên học phần: Giáo dục thể chất 1"
+  },
+  {
+    "id": 115,
+    "question": "hủy đkhp tuần 5 có tốn tiền k",
+    "ground_truth": "Có. Nếu sinh viên rút bớt học phần trong vòng 1 tuần (tuần 5 của mỗi đợt học) thì vẫn phải đóng học phí đầy đủ cho các học phần đã rút.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 9, Khoản 7.b",
+    "evidence_quote_or_summary": "Sau thời gian trên, sinh viên được phép rút bớt học phần trong vòng 1 tuần (tuần 5 của mỗi đợt học)... Trong trường hợp này, sinh viên phải đóng học phí cho các học phần đã rút."
+  },
+  {
+    "id": 116,
+    "question": "luật học bn tín",
+    "ground_truth": "Chương trình đào tạo ngành Luật có tổng cộng 130 tín chỉ (bao gồm 33 tín chỉ Giáo dục đại cương và 97 tín chỉ Kiến thức chuyên nghiệp). Số này chưa tính các học phần Giáo dục thể chất và Giáo dục quốc phòng.",
+    "difficulty": "hard",
+    "question_type": "user_style",
+    "file_source": "1_NganhLuat.pdf",
+    "evidence_location": "Phần phân bổ khối lượng kiến thức",
+    "evidence_quote_or_summary": "A. KHỐI KIẾN THỨC GIÁO DỤC ĐẠI CƯƠNG 33... B. KHỐI KIẾN THỨC CHUYÊN NGHIỆP 97"
+  },
+  {
+    "id": 117,
+    "question": "tư vấn tâm lý ai phụ trách",
+    "ground_truth": "Cô Phạm Thị Thu Sương hiện là người phụ trách Ban tư vấn tâm lý học đường của Trường (SĐT: 0907008588, Email: suongptt@hcmute.edu.vn).",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "SO TAY SV 2025 (final).pdf",
+    "evidence_location": "Danh sách đội ngũ tư vấn sinh viên, trang 144",
+    "evidence_quote_or_summary": "1. Phạm Thị Thu Sương - Phụ trách Ban tư vấn - suongptt@hcmute.edu.vn - 0907008588"
+  },
+  {
+    "id": 118,
+    "question": "thi hộ lần 2",
+    "ground_truth": "Sinh viên thi hộ hoặc nhờ người thi hộ lần thứ 2 sẽ bị kỷ luật ở mức Buộc thôi học.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 22, Khoản 2",
+    "evidence_quote_or_summary": "Sinh viên thi hộ hoặc nhờ người thi hộ đều bị kỷ luật ở mức đình chỉ học tập 1 năm đối với trường hợp vi phạm lần thứ nhất và buộc thôi học đối với trường hợp vi phạm lần thứ hai."
+  },
+  {
+    "id": 119,
+    "question": "điểm qt 2 cột dc ko",
+    "ground_truth": "Không được. Tối thiểu điểm quá trình phải gồm 3 cột điểm thành phần.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "Quy định kiểm tra đánh giá học phần.pdf",
+    "evidence_location": "Điều 6, Khoản 2",
+    "evidence_quote_or_summary": "Tối thiểu điểm quá trình gồm 3 cột điểm thành phần."
+  },
+  {
+    "id": 120,
+    "question": "thời gian đk xét tn đợt tháng 12/2024",
+    "ground_truth": "Sinh viên đăng ký xét tốt nghiệp đợt tháng 12/2024 trên trang online từ ngày 19/11/2024 đến ngày 01/12/2024.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "TB xét tốt nghiệp đhcq đợt 2- T12.24.pdf",
+    "evidence_location": "Mục IV.5. Sinh viên",
+    "evidence_quote_or_summary": "Đăng ký xét tốt nghiệp trên trang online từ ngày 19/11/2024 đến ngày 01/12/2024."
+  },
+  {
+    "id": 121,
+    "question": "phí thi avđr",
+    "ground_truth": "Lệ phí thi kiểm tra trình độ tiếng Anh đầu ra là 180.000 đồng/sinh viên.",
+    "difficulty": "easy",
+    "question_type": "user_style",
+    "file_source": "3585.Thông báo vv đăng ký thi kiểm tra trình độ tiếng anh đầu ra đợt tháng 112025.PDF",
+    "evidence_location": "Mục 3. Lệ phí thi",
+    "evidence_quote_or_summary": "3. Lệ phí thi: 180.000 đồng/sinh viên."
+  },
+  {
+    "id": 122,
+    "question": "ielts 5.5 đổi ra điểm hệ tiếng anh",
+    "ground_truth": "Chứng chỉ IELTS 5.5 quy đổi sang các môn Academic English 1 và 2 là 9.0 điểm; đối với Academic English 3 là 8.5 điểm.",
+    "difficulty": "hard",
+    "question_type": "table_lookup",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Phụ lục I, Bảng 2 (Đối với các khoá từ 2024 trở về trước)",
+    "evidence_quote_or_summary": "Điểm IELTS 5.5 -> Academic English 1: 9.0; Academic English 2: 9.0; Academic English 3: 8.5"
+  },
+  {
+    "id": 123,
+    "question": "lớp clc nhóm 1 học phí",
+    "ground_truth": "Hệ chất lượng cao Khối ngành Khoa học xã hội - quản lý kinh doanh (nhóm 1) khóa 2023 có mức học phí là 20.800.000 đồng/học kỳ (hoặc 1.189.000 đồng/tín chỉ).",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 3. Hệ chính quy bậc đại học chương trình đào tạo chất lượng cao",
+    "evidence_quote_or_summary": "Khóa 2023 - Khối ngành khoa học xã hội – quản lý kinh doanh (1): Mức HP/ Học kỳ: 20.800.000 ; Mức HP/tín chỉ: 1.189.000"
+  },
+  {
+    "id": 124,
+    "question": "làm giả bằng cấp",
+    "ground_truth": "Sinh viên làm giả hồ sơ, văn bằng, chứng chỉ để trúng tuyển hoặc tốt nghiệp sẽ bị kỷ luật buộc thôi học, đồng thời văn bằng tốt nghiệp (nếu đã cấp) sẽ bị thu hồi và hủy bỏ.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 22, Khoản 3",
+    "evidence_quote_or_summary": "Người học sử dụng hồ sơ, văn bằng, chứng chỉ giả làm điều kiện trúng tuyển hoặc điều kiện tốt nghiệp sẽ bị buộc thôi học; văn bằng tốt nghiệp nếu đã được cấp sẽ bị thu hồi, huỷ bỏ."
+  },
+  {
+    "id": 125,
+    "question": "trễ học phí",
+    "ground_truth": "Trước thời gian đăng ký môn học, sinh viên còn nợ học phí của các học kỳ trước sẽ không được phép đăng ký môn học cho học kỳ tiếp theo.",
+    "difficulty": "medium",
+    "question_type": "user_style",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Mục IV.1. Nghĩa vụ và xử lý vi phạm quy định đóng học phí của sinh viên",
+    "evidence_quote_or_summary": "Trước thời gian đăng ký môn học, sinh viên còn nợ học phí của các học kỳ trước sẽ không được phép đăng ký môn học cho học kỳ tiếp theo."
+  },
+  {
+    "id": 126,
+    "question": "ngành Hệ thống kỹ thuật công trình xây dựng nhóm mấy",
+    "ground_truth": "Ngành Hệ thống kỹ thuật công trình xây dựng (mã ngành 7510106) thuộc Nhóm 2: Nhóm ngành Công nghệ kỹ thuật - Sản xuất chế biến.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Phụ lục Danh sách nhóm ngành",
+    "evidence_quote_or_summary": "Nhóm 2: Nhóm ngành Công nghệ kỹ thuật – Sản xuất chế biến. STT 2: Hệ thống kỹ thuật công trình xây dựng - Mã ngành 7510106."
+  },
+  {
+    "id": 127,
+    "question": "học phí chương trình btec năm 2,3 k2025",
+    "ground_truth": "Học phí lần đầu cho chương trình liên kết đào tạo BTEC, TMC (Năm 2,3) khóa 2025 là 80.000.000 đồng/năm học.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng Mục 7.1.1 Học phí học lần đầu",
+    "evidence_quote_or_summary": "STT 2: Chương trình BTEC, TMC (Năm 2,3) - Khóa 2025: 80.000.000 Đồng/năm học"
+  },
+  {
+    "id": 128,
+    "question": "jlpt n3 100 điểm đổi anh văn 3 dc mấy",
+    "ground_truth": "Chứng chỉ tiếng Nhật JLPT N3 với 100 điểm sẽ được quy đổi thành 10 điểm cho học phần Anh văn 3 (Tiếng Anh 3).",
+    "difficulty": "hard",
+    "question_type": "table_lookup",
+    "file_source": "3239_Quyết định ban hành quy định chuyển điểm hoặc miễn thi các học phần ngoại ngữ, miễn thi ngoại ngữ đầu ra.pdf",
+    "evidence_location": "Phụ lục II, Bảng Tiếng Nhật",
+    "evidence_quote_or_summary": "JLPT N3 - Điểm 100 -> Cột Tiếng Nhật 3 (Anh văn 3): 10 điểm."
+  },
+  {
+    "id": 129,
+    "question": "thời gian nộp bảng điểm sau khi thi",
+    "ground_truth": "Giảng viên phải nộp bảng điểm gốc về phòng đào tạo (đợt ba - nộp tất cả các bảng điểm còn lại) trong vòng 10 ngày sau ngày thi cuối cùng của kỳ thi.",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "Quy định kiểm tra đánh giá học phần.pdf",
+    "evidence_location": "Điều 8, Khoản 6",
+    "evidence_quote_or_summary": "đợt ba, nộp tất cả các bảng điểm gốc còn lại trong vòng 10 ngày sau ngày thi cuối cùng của kỳ thi."
+  },
+  {
+    "id": 130,
+    "question": "tiếp sức mùa thi cấp trường mấy ngày ctxh",
+    "ground_truth": "Tham gia chương trình Tiếp sức mùa thi cấp trường (kéo dài 02 tuần) sẽ được cộng từ 2 đến 3 ngày công tác xã hội.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "QUYDINH-HDCDONG-2013 (1).pdf",
+    "evidence_location": "Bảng mã 001502",
+    "evidence_quote_or_summary": "001502 Tham gia suốt chương trình cấp trường (02 tuần) -> Điểm CTXH: 2->3"
+  },
+  {
+    "id": 131,
+    "question": "môn toán 3 cơ khí mã j",
+    "ground_truth": "Môn Toán 3 trong chương trình đào tạo ngành Công nghệ kỹ thuật cơ khí có mã môn học là MATH132601.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "9_NganhCNKTCoKhi.pdf",
+    "evidence_location": "Mục 8. Kế hoạch giảng dạy, Học kỳ 3",
+    "evidence_quote_or_summary": "Học kỳ 3: TT 1 - Mã MH: MATH132601 - Tên MH: Toán 3"
+  },
+  {
+    "id": 132,
+    "question": "xác suất thống kê cntt mấy tín",
+    "ground_truth": "Môn Xác suất thống kê ứng dụng (MATH132901) của ngành Công nghệ Thông tin có 3 tín chỉ.",
+    "difficulty": "easy",
+    "question_type": "table_lookup",
+    "file_source": "15_NganhCNTT.pdf",
+    "evidence_location": "Mục 7.1 Kiến thức giáo dục đại cương",
+    "evidence_quote_or_summary": "STT 11 - MATH132901 Xác suất thống kê ứng dụng - Số tín chỉ: 3"
+  },
+  {
+    "id": 133,
+    "question": "dkmh đợt 1 hk1 25-26",
+    "ground_truth": "Thời gian đăng ký học phần đợt 1 cho HKI 2025-2026 là từ 09g00 ngày 11/8/2025 đến 07g30 ngày 18/8/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần",
+    "evidence_quote_or_summary": "Đợt 1: Thời gian đăng ký học phần từ 09g00 ngày 11/8/2025 đến 07g30 ngày 18/8/2025"
+  },
+  {
+    "id": 134,
+    "question": "học phí liên thông cd-đh khối kt k2025",
+    "ground_truth": "Học phí cho chương trình liên thông từ Cao đẳng lên Đại học (hệ VLVH) thuộc khối ngành Công nghệ kỹ thuật - Sản xuất chế biến là 12.500.000 đồng/học kỳ.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Bảng mục 5. Hệ vừa làm vừa học, đào tạo từ xa",
+    "evidence_quote_or_summary": "STT 2: Các ngành/chương trình đào tạo đại học VLVH/ĐTTX đối với người đã có bằng tốt nghiệp Cao đẳng (Liên thông CĐ-ĐH)... Khối ngành Công nghệ kỹ thuật-Sản xuất chế biến: 12.500.000"
+  },
+  {
+    "id": 135,
+    "question": "thời gian khảo sát kse hk1 25-26",
+    "ground_truth": "Thời gian thực hiện khảo sát lấy ý kiến sinh viên (KSE) của học kỳ 1 năm học 2025-2026 là từ ngày 15/09/2025 đến ngày 31/12/2025.",
+    "difficulty": "easy",
+    "question_type": "timeline",
+    "file_source": "16.9.2025_TB triển khai KS SV về HĐGD của GV_HKI 25-26 final.signed.pdf",
+    "evidence_location": "Mục 1. Thời gian khảo sát",
+    "evidence_quote_or_summary": "1. Thời gian khảo sát: Từ ngày 15/09/2025 đến ngày 31/12/2025."
+  },
+  {
+    "id": 136,
+    "question": "khóa 2024 đóng tiền gdqp chung học phí luôn đk",
+    "ground_truth": "Không. Học phí khóa 2024 chương trình chuẩn và đặc thù không bao gồm học phần Giáo dục quốc phòng và an ninh (GDQP&AN). Sinh viên phải đóng riêng với đơn giá 853.000 đồng/tín chỉ.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "2810_Quyết định ban hành Quy định thu học phí năm học 2025-2026_1.pdf",
+    "evidence_location": "Ghi chú dưới bảng mục 1 và 2",
+    "evidence_quote_or_summary": "Học phí khóa 2024 không bao gồm các học phần GDQP&AN. Học phí học phần GDQP&AN, GDTC khóa 2024, 2025: 853.000 đồng/Tín chỉ."
+  },
+  {
+    "id": 137,
+    "question": "ielts 4.0 miễn av2 pk",
+    "ground_truth": "Không đúng. Chứng chỉ IELTS 4.0 chỉ được miễn học phần Kỹ năng giao tiếp tiếng Anh 1. Để được miễn học phần Kỹ năng giao tiếp tiếng Anh 2, sinh viên cần đạt IELTS từ 4.5 đến 5.0.",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Bảng Mục 3.1",
+    "evidence_quote_or_summary": "IELTS 4.0 -> Được MIỄN học phần Kỹ năng giao tiếp tiếng Anh 1. IELTS 4.5 - 5.0 -> Được MIỄN học phần Kỹ năng giao tiếp tiếng Anh 2."
+  },
+  {
+    "id": 138,
+    "question": "vstep bậc 3 miễn avđr cho sư phạm tiếng anh ko",
+    "ground_truth": "Không được. Chứng chỉ VSTEP Bậc 3 chỉ áp dụng miễn thi ngoại ngữ đầu ra cho các ngành không chuyên ngữ. Riêng ngành Sư phạm tiếng Anh và Ngôn ngữ Anh yêu cầu phải đạt trình độ C1 (IELTS hoặc TOEFL iBT).",
+    "difficulty": "hard",
+    "question_type": "edge_case",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Bảng Mục 4",
+    "evidence_quote_or_summary": "Riêng ngành Sư phạm tiếng Anh và Ngôn ngữ Anh: đạt trình độ C1 (IELTS hoặc TOEFL iBT)"
+  },
+  {
+    "id": 139,
+    "question": "đkmh đợt 2 cho đh đại trà khóa nào",
+    "ground_truth": "Đối với hệ Đại trà, đăng ký môn học đợt 2 (từ 12/8/2025 đến 18/8/2025) dành riêng cho khóa 2022. (Lưu ý: Đợt này cũng mở chung cho hệ CLC tiếng Việt và CLC Việt-Nhật các khóa còn lại).",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục B. Quy định phân luồng đăng ký học phần",
+    "evidence_quote_or_summary": "Đợt 2: Thời gian đăng ký học phần từ 09g00 ngày 12/8/2025... bao gồm: SV hệ Đại trà khóa 2022; hệ CLC tiếng Việt, hệ CLC Việt-Nhật các khóa còn lại."
+  },
+  {
+    "id": 140,
+    "question": "vắng thi cuối kỳ tính 0đ đúng k",
+    "ground_truth": "Đúng nếu bạn vắng mặt không có lý do. Tuy nhiên, nếu bạn vắng mặt có lý do chính đáng (như ốm đau) thì phải làm đơn xin phép kèm minh chứng để được nhận điểm I (hoãn thi) và thi bù vào đợt khác.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 11, Khoản 3",
+    "evidence_quote_or_summary": "Sinh viên vắng mặt trong buổi thi, đánh giá không có lý do chính đáng phải nhận điểm không. Sinh viên vắng mặt có lý do chính đáng sẽ được dự thi, đánh giá ở một đợt khác và được tính điểm lần đầu."
+  },
+  {
+    "id": 141,
+    "question": "bảo vệ đồ án online tối đa bn % điểm",
+    "ground_truth": "Thông thường, hình thức đánh giá trực tuyến đóng góp không quá 50% trọng số điểm học phần. Tuy nhiên, riêng việc tổ chức bảo vệ và đánh giá đồ án, khóa luận có thể được thực hiện trực tuyến với trọng số cao hơn (lớn hơn 50%) khi đáp ứng thêm các điều kiện theo quy định.",
+    "difficulty": "hard",
+    "question_type": "policy_rule",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 11, Khoản 2",
+    "evidence_quote_or_summary": "Hình thức đánh giá này đóng góp không quá 50% trọng số điểm học phần... riêng việc tổ chức bảo vệ và đánh giá đồ án, khóa luận được thực hiện trực tuyến với trọng số cao hơn khi đáp ứng thêm các điều kiện sau đây..."
+  },
+  {
+    "id": 142,
+    "question": "đk 30 tín chỉ kì 1 dc k",
+    "ground_truth": "Không được. Theo quy chế, khối lượng học tập tối đa của sinh viên không được vượt quá 28 tín chỉ trong một học kỳ.",
+    "difficulty": "easy",
+    "question_type": "edge_case",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 9, Khoản 4.b",
+    "evidence_quote_or_summary": "Khối lượng tối đa không vượt quá 28 tín chỉ"
+  },
+  {
+    "id": 143,
+    "question": "chứng chỉ aptis esol 140 đ",
+    "ground_truth": "Với chứng chỉ Aptis ESOL General đạt 140 điểm (thuộc khung 102-149 điểm), sinh viên sẽ được miễn thi học phần Kỹ năng giao tiếp tiếng Anh 2.",
+    "difficulty": "medium",
+    "question_type": "table_lookup",
+    "file_source": "3022_Thông báo nộp CCNN để miễn thi AV đầu vào, chuyển điểm-miễn các học phần NN và miễn thi NN đầu ra đối với SV ĐHCQ khóa 2025.pdf",
+    "evidence_location": "Bảng Mục 3.1",
+    "evidence_quote_or_summary": "Aptis ESOL General (102-149) -> Được MIỄN học phần Kỹ năng giao tiếp tiếng Anh 2"
+  },
+  {
+    "id": 144,
+    "question": "hạn nộp đơn phúc khảo cuối kỳ",
+    "ground_truth": "Sinh viên phải nộp đơn phúc khảo trong vòng 7 ngày kể từ khi giảng viên công bố điểm thi của học phần đó.",
+    "difficulty": "medium",
+    "question_type": "timeline",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 11, Khoản 7.g",
+    "evidence_quote_or_summary": "Thời gian nhận đơn chấm phúc khảo: trong vòng 7 ngày kể từ khi công bố điểm thi của học phần đó. Sau thời gian trên, Trường sẽ không giải quyết việc chấm phúc khảo."
+  },
+  {
+    "id": 145,
+    "question": "đại trà qua học clc dc k",
+    "ground_truth": "Mặc định là không được. Sinh viên hệ Đại trà không được đăng ký học với các lớp Chất lượng cao (CLC) hoặc ngược lại. Muốn học khác hệ, sinh viên phải làm đơn và được sự đồng ý của Ban Chủ nhiệm khoa quản ngành và Phòng Đào tạo.",
+    "difficulty": "medium",
+    "question_type": "policy_rule",
+    "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
+    "evidence_location": "Mục Chú ý, trang 4",
+    "evidence_quote_or_summary": "SV hệ CLC không được đăng ký học với các lớp Đại trà hoặc ngược lại. Các trường hợp đặc biệt phải làm đơn và được sự đồng ý của BCN khoa quản ngành và phòng Đào tạo."
+  },
+  {
+    "id": 146,
+    "question": "sv clc bảo vệ khóa luận chưa làm nckh",
+    "ground_truth": "Không được. Theo quy định (tại Phụ lục 3 áp dụng cho chương trình đào tạo chất lượng cao), tất cả sinh viên các chương trình đào tạo chính quy bắt buộc phải hoàn thành yêu cầu tham gia nghiên cứu khoa học trước khi báo cáo khóa luận tốt nghiệp, xét tốt nghiệp.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Phụ lục 3. Quy định về tham gia nghiên cứu khoa học của các Chương trình đào tạo chính quy chất lượng cao",
+    "evidence_quote_or_summary": "1. Tất cả sinh viên các chương trình đào tạo chính quy bắt buộc phải hoàn thành yêu cầu tham gia nghiên cứu khoa học trước khi báo cáo khóa luận tốt nghiệp, xét tốt nghiệp."
+  },
+  {
+    "id": 147,
+    "question": "đang thử thách hv đk học 2 bằng dc k",
+    "ground_truth": "Không được. Để đăng ký học cùng lúc hai chương trình, sinh viên phải có Điểm trung bình tích lũy (ĐTBTL) xếp loại Khá trở lên, HOẶC xếp loại Trung bình và đáp ứng điều kiện trúng tuyển của chương trình thứ 2. Sinh viên bị thử thách học tập (ĐTBTL rơi vào loại Yếu/Kém) sẽ không thỏa mãn điều kiện học lực tối thiểu từ mức Trung bình này.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 20, Khoản 2",
+    "evidence_quote_or_summary": "Tại thời điểm đăng ký, sinh viên phải đáp ứng 1 trong 2 điều kiện... a) Học lực tính theo ĐTBTL xếp loại khá trở lên... b) Học lực tính theo ĐTBTL xếp loại trung bình và đáp ứng điều kiện trúng tuyển của chương trình thứ hai."
+  },
+  {
+    "id": 148,
+    "question": "bị khiển trách có dc loại xuất sắc ko",
+    "ground_truth": "Vẫn được. Theo quy chế, sinh viên có ĐTBTL loại Xuất sắc hoặc Giỏi chỉ bị giảm đi một mức hạng tốt nghiệp nếu từng bị kỷ luật từ mức Cảnh cáo trở lên. Kỷ luật Khiển trách không làm giảm hạng bằng tốt nghiệp.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Điều 16, Khoản 3.b",
+    "evidence_quote_or_summary": "hạng tốt nghiệp của sinh viên có ĐTBTL loại xuất sắc và giỏi sẽ bị giảm đi một mức nếu thuộc một trong các trường hợp sau:... b) Sinh viên đã bị kỷ luật từ mức cảnh cáo trở lên trong thời gian học."
+  },
+  {
+    "id": 149,
+    "question": "liên thông đại học tính xếp hạng năm mấy",
+    "ground_truth": "Sinh viên hệ liên thông không áp dụng bảng xếp hạng năm đào tạo (năm nhất, năm hai, năm ba...) dựa trên tín chỉ như sinh viên chính quy.",
+    "difficulty": "medium",
+    "question_type": "edge_case",
+    "file_source": "3116_Quyết định ban hành Quy chế đào tạo trình độ đại học đối với sinh viên đại học của Trường, thay thế QĐ số 3811 ngày 31_12_2024.pdf",
+    "evidence_location": "Bảng 5, Khoản 5 Điều 12",
+    "evidence_quote_or_summary": "Bảng 5: Xếp hạng năm đào tạo sinh viên (Không áp dụng đối với sinh viên liên thông)"
+  },
+  {
+    "id": 150,
+    "question": "lớp sv xuất sắc cần gì",
+    "ground_truth": "Để đạt danh hiệu lớp Sinh viên Xuất sắc, lớp phải đạt chuẩn lớp SV Tiên tiến, đồng thời có từ 60% tổng số sinh viên đạt danh hiệu SV Giỏi trở lên. Ngoài ra, lớp không được có cá nhân xếp loại học tập Trung bình, rèn luyện Kém hoặc bị kỷ luật từ cảnh cáo trở lên.",
+    "difficulty": "hard",
+    "question_type": "multi_hop",
+    "file_source": "1430 qd sua doi bo sung.pdf",
+    "evidence_location": "Điều 1, Phần b",
+    "evidence_quote_or_summary": "b) Tiêu chuẩn của danh hiệu lớp SV Xuất sắc: - Đạt các tiêu chuẩn của danh hiệu lớp SV Tiên tiến và có từ 60% trên tổng số SV của lớp đạt danh hiệu SV Giỏi trở lên. - Không có cá nhân xếp loại học tập Trung bình hoặc rèn luyện Kém, bị kỷ luật từ mức cảnh cáo trở lên"
+  }
+]
+```
