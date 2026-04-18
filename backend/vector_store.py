@@ -49,11 +49,7 @@ def format_context(docs):
     """
     context_parts = []
     for i, doc in enumerate(docs):
-        # Lấy filename từ metadata
-        source_file = doc.metadata.get('filename') or doc.metadata.get('source', 'Không rõ nguồn')
-        if '\\' in source_file or '/' in source_file:
-            source_file = source_file.replace('\\', '/').split('/')[-1]
-
-        part = f"--- NGUỒN #{i+1} ---\nFile: {source_file}\nNội dung: {doc.page_content}\n"
+        # Không cần lấy filename từ metadata vì trong nội dung đã có
+        part = f"--- NGUỒN #{i+1} ---\n{doc.page_content}\n"
         context_parts.append(part)
     return "\n".join(context_parts)

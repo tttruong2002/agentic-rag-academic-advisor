@@ -22,13 +22,20 @@ Dùng kết hợp output của **Docling** + **UnstructuredPDFLoader**, sau đó
 4. **Chunking theo Ngữ Nghĩa (Header Chunking):** Chuyển từ chia theo độ dài (Token/Char) sang `MarkdownHeaderTextSplitter`. Đảm bảo mỗi chunk luôn gắn với tiêu đề nguồn gốc trong Metadata.
 5. **Context Caching:** Nếu cần gọi lại nhiều lần trên cùng nội dung PDF, sử dụng Gemini Context Caching để tiết kiệm chi phí đáng kể.
 
-### 1.2. Vấn đề Rate Limit (Groq API)
+### 1.2. Vấn đề Rate Limit (Groq API) - [ĐÃ CẢI THIỆN]
 Hệ thống sử dụng model `llama-3.3-70b-versatile` gặp lỗi `Error 429: Rate limit reached` do giới hạn TPM (Tokens Per Minute) của Groq ở ngưỡng 12K. Vòng lặp Agentic RAG gọi mô hình nhiều lần trong thời gian ngắn khiến hạn mức nhanh chóng cạn kiệt.
 
 **💡 Giải pháp đề xuất:**
 1. **Exponential Backoff:** Implement thư viện `Tenacity` trong Python ở hàm gọi LLM để hệ thống tự động Sleep (ngủ) một vài giây và thử lại nếu gặp mã HTTP 429.
 2. **Đổi mô hình / Cung cấp:** Đổi sang model nhẹ hơn của Groq cho khâu Re-writer (llama 3.1 8b) hoặc nâng cấp API provider có quota rộng rãi hơn cho model Generator nếu có ngân sách.
 3. **Caching (Semantic Cache):** Thêm bộ nhớ đệm (Redis / SQLite) để nếu User hỏi 1 câu tương tự câu vừa hỏi, trả về kết quả luôn thay vì nhờ LLM suy nghĩ lại từ đầu.
+
+Hệ thống truy xuất đang gặp khó khăn do chất lượng dữ liệu đầu vào (PDF) sau khi tiền xử lý bị phân mảnh và nhiễu.
+**💡 Trạng thái:** Đã hoàn thành bộ 150 câu hỏi thử nghiệm để bắt đầu đánh giá độ chính xác (Ground Truth).
+
+**💡 Giải pháp đã triển khai:**
+1. **Shuffle Key Rotation:** Ngẫu nhiên hóa thứ tự 10 API Keys giúp san sẻ gánh nặng TPM đều cho toàn bộ key ngay từ lúc khởi động.
+2. **Robust Resume:** Coi điểm 0 là lỗi hệ thống, cho phép Notebook tự động chạy tiếp (Resume) tại đúng điểm lỗi thay vì chạy lại từ đầu.
 
 ### 1.3. Vấn đề UI/UX
 Do định hướng dài hạn sẽ đập bỏ Streamlit và thay bằng **ReactJS** cho Frontend, nên việc chèn các tính năng tương tác phía FE lúc này (như Login Google) là không khả thi và gây dư thừa.
@@ -91,4 +98,4 @@ Lưu từng dòng tin nhắn (Prompt của User, Answer của AI) thuộc về m
   - [ ] Thêm thư viện `tenacity` để bọc cơ chế Retry Retry-After / Exponential Backoff tránh lỗi Rate Limit.
 - [ ] **Chuẩn bị chuyển đổi Frontend**
   - [ ] Thống nhất lại toàn bộ JSON Interface của Backend trả về.
-  - [ ] Design kiến trúc React cơ bản (hoặc Next.js) cho việc hiển thị khung Chat.
+  - [ ] Design kiến trúc React cơ bản cho việc hiển thị khung Chat.

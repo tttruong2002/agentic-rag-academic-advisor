@@ -58,7 +58,7 @@ async def chat_endpoint(request: ChatRequest, db: Session = Depends(get_session)
     # ==========================================================
     # 1. Gọi Hàm Cốt Lõi Agentic RAG
     # ==========================================================
-    final_answer, accumulated_context, intent, retries = run_agentic_rag(
+    final_answer, accumulated_context, intent, retries, is_found, _ = run_agentic_rag(
         question=question, 
         max_retries=max_retries
     )

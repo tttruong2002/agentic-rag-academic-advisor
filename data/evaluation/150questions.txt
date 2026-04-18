@@ -1382,8 +1382,8 @@
   },
   {
     "id": 139,
-    "question": "đkmh đợt 2 cho đh đại trà khóa nào",
-    "ground_truth": "Đối với hệ Đại trà, đăng ký môn học đợt 2 (từ 12/8/2025 đến 18/8/2025) dành riêng cho khóa 2022. (Lưu ý: Đợt này cũng mở chung cho hệ CLC tiếng Việt và CLC Việt-Nhật các khóa còn lại).",
+    "question": "đkmh đợt 2 từ ngày 12/8/2025 là cho đh đại trà khóa nào",
+    "ground_truth": "Đối với hệ Đại trà, đăng ký môn học đợt 2 bắt đầu từ 12/8/2025 là dành riêng cho khóa 2022. (Lưu ý: Đợt này cũng mở chung cho hệ CLC tiếng Việt và CLC Việt-Nhật các khóa còn lại).",
     "difficulty": "medium",
     "question_type": "timeline",
     "file_source": "2692_Thông báo vv kế hoạch đăng ký và chỉnh sửa học phần qua mạng học kỳ I, năm học 2025-2026 (dành cho sinh viên chính quy hệ đại trà và CLC TV tại trường).pdf",
