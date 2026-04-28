@@ -30,5 +30,9 @@ data/raw/
 *.DS_Store
 Thumbs.db
 
-# === Agents & temp ===
+# === Legacy agent config (replaced by .agent/) ===
 .agents/
+
+# === DO NOT ignore these (version-controlled AI context) ===
+# .agent/       ← Standard SKILL.md skills (cross-tool)
+# .context/     ← Memory Bank for AI agents
