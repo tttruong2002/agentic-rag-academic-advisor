@@ -94,8 +94,8 @@ def _rotate_key(reason: str = "Rate Limit") -> str:
 
 # Biến Toàn cục chứa Model
 llm_router     = None
-llm_generator  = None   # compound (mạnh hơn, ưu tiên trước)
-llm_generator2 = None   # compound-mini (fallback nếu compound bị Limit)
+llm_generator  = None   # compound-mini (Generator chính)
+llm_generator2 = None   # llama-3.3-70b (fallback nếu compound-mini bị Limit)
 llm_rewriter   = None
 
 
