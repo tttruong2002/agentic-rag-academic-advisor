@@ -1,14 +1,10 @@
 # AGENTS.md — Cross-Tool AI Context
 
-> File này được đọc bởi mọi AI coding agent (Claude, Cursor, Copilot, Antigravity/Gemini).
-
-> Mục đích: Cung cấp context tối thiểu để AI hiểu project ngay lập tức.
-
 ## Project
 **Agentic RAG Tư Vấn Học Vụ HCMUTE** — Chatbot hỏi đáp quy chế đào tạo cho sinh viên, dựa trên kiến trúc Agentic RAG với Intent Routing, Query Rewriting và Self-Correction Loop.
 
 ## Context Files
-Đọc `.context/SUMMARY.md` trước. Chi tiết thêm trong `.context/ARCHITECTURE.md`, `.context/TECH_STACK.md`.
+Đọc `docs/OVERVIEW.md` trước. Chi tiết thêm trong `docs/ARCHITECTURE.md`, `docs/TECH_STACK.md`.
 
 ## Structure
 ```
@@ -48,9 +44,6 @@ python -c "from backend.main import app; print('OK')"
 - **Key Rotation**: After rotating Groq API key, MUST call `_rebuild_all_chains()` — LangChain caches key at init time
 - **Generator Fallback**: compound-mini → llama-70b (same key) → rotate key
 - **`run_agentic_rag()`**: Core function reused in both API and Jupyter notebooks — changes here affect evaluation too
-
-## Git Workflow (CRITICAL)
-- TRƯỚC KHI commit bất cứ thứ gì, BẮT BUỘC phải đọc và chạy quy trình trong `.agent/skills/context-sync/SKILL.md`. Việc dùng `git diff` để tự động cập nhật thư mục `.context/` là quy định tối thượng của dự án này.
 
 ## Don'ts
 - Do NOT hardcode API keys in source files
